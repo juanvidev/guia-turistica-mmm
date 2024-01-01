@@ -2,7 +2,7 @@ import { FC } from "react"
 import logocnc from '../../assets/logocnc.svg'
 
 const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => {
-    const { innerWidth: width, innerHeight: height } = window;
+    const { innerHeight: height } = window;
 
 
 
