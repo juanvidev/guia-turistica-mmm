@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-glow: radial-gradient(rgba(1, 65, 255, 0.204), rgba(1, 65, 255, 0));
+
+  --right-glow: radial-gradient(rgba(213, 1, 255, 0.234), rgba(162, 1, 255, 0));
+  --secondary-glow: linear-gradient(
+    to bottom right,
+    rgba(1, 65, 255, 0.141),
+    rgba(1, 65, 255, 0.164),
+    rgba(1, 65, 255, 0.138)
+  );
+  --secondary-right-glow: linear-gradient(
+    to bottom right,
+    rgba(116, 121, 16, 0.124),
+    rgba(225, 219, 37, 0.148),
+    rgba(195, 249, 1, 0.467)
+  );
+}
+
+.glow-left::before {
+  background: var(--secondary-glow);
+  border-radius: 10%;
+  width: 300px;
+  height: 250px;
+}
+
+.glow-left::after {
+  background: var(--primary-glow);
+  width: 700px;
+  height: 550px;
+  transform: rotate(-50deg);
+  border-radius: 20%;
+  color: #ff4848;
+}
+
+.glow-left::before,
+.glow-left::after {
+  content: "";
+  left: -150px;
+  bottom: -150px;
+  position: fixed;
+  filter: blur(45px);
+  transform: translateZ(0);
+}
+
+.glow-right::before {
+  background: var(--secondary-right-glow);
+  width: 650px;
+  height: 450px;
+}
+
+.glow-right::after {
+  border-radius: 100%;
+  background: var(--right-glow);
+  width: 50px;
+  height: 50px;
+}
+
+.glow-right::before,
+.glow-right::after {
+  content: "";
+  right: -150px;
+  top: 100px;
+  position: fixed;
+  filter: blur(60px);
+  transform: translateZ(0);
+  transform: rotate(-10deg);
+}
+
+* {
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
