@@ -66,7 +66,7 @@ const ListCategories = () => {
             {categories.map((cat) => (
                 <li key={cat.email} className="flex justify-between gap-x-6 py-5 hover:bg-gray-600 hover:bg-gray-600/10 px-2 rounded ease-out duration-300 hover:duration-300 cursor-pointer">
                     <div className="flex min-w-0 gap-x-4">
-                        <div className="h-12 bg-gold w-12 rounded-full flex justify-center items-center">
+                        <div className="item-list h-12 w-12 rounded-full flex justify-center items-center">
                             {cat.icon}
                         </div>
                         <div className="min-w-0 flex justify-center items-center">
