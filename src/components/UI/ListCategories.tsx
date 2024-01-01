@@ -70,7 +70,7 @@ const ListCategories = () => {
                             {cat.icon}
                         </div>
                         <div className="min-w-0 flex justify-center items-center">
-                            <p className="text-sm md:text-md font-semibold leading-6 text-white-900">{cat.name}</p>
+                            <p className="text-sm md:text-md  leading-6 text-white-900">{cat.name}</p>
                         </div>
                     </div>
                     <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
