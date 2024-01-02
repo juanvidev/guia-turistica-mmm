@@ -7,6 +7,7 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
         dynamicWidth: window.innerWidth,
         dynamicHeight: window.innerHeight
     });
+
     const setDimension = () => {
         getDimension({
             dynamicWidth: window.innerWidth,
@@ -31,6 +32,7 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
 
             <div className="glow-left"></div>
             <div className="glow-right z-1 opacity-60 md:opacity-100"></div>
+
             {children}
         </div>
     )
