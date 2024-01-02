@@ -30,7 +30,7 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
             </div>
 
             <div className="glow-left"></div>
-            <div className="glow-right opacity-60 md:opacity-100"></div>
+            <div className="glow-right z-1 opacity-60 md:opacity-100"></div>
             {children}
         </div>
     )

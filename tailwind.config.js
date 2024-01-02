@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 export default {
-  content: [],
-  purge: [
-    './src/**/*.html',
-    './src/**/*.tsx',
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',
+    './public/index.html',
   ],
   presets: [],
   darkMode: 'media', // or 'class'
@@ -306,16 +307,7 @@ export default {
       DEFAULT: '1',
     },
     fontFamily: {
-      sans: [
-        'ui-sans-serif',
-        'system-ui',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-        '"Noto Color Emoji"',
-      ],
-      serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      sans: ['Inter var', ...defaultTheme.fontFamily.sans], serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
         'ui-monospace',
         'SFMono-Regular',
