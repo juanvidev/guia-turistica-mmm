@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { useLocation, useNavigate } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 
 type PlaceProps = {
     place_name?: string,
@@ -9,10 +9,8 @@ type PlaceProps = {
 
 
 const ListOfPlaces: FC = () => {
-    const navigate = useNavigate();
     const { state } = useLocation();
     const places = state.places;
-    const categoryName = state.category;
 
     return (
         <div className="mx-auto overflow-scroll max-w-2xl px-4 flex-1 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 z-10">
