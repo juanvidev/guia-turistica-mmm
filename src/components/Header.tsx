@@ -21,7 +21,7 @@ const Header = () => {
             </div>
             <div className="flex mb-5 w-full sm:w-[40%] z-10 px-5">
                 {
-                    location.pathname === '/places' && (
+                    location.pathname !== '/' && (
                         <>
                             <button className="mr-5" onClick={() => handleBack()}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
