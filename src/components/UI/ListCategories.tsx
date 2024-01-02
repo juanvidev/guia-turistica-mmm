@@ -62,15 +62,15 @@ const categories = [
 
 const ListCategories = () => {
     return (
-        <ul role="list">
+        <ul className="w-full sm:w-[400px]" role="list">
             {categories.map((cat) => (
-                <li key={cat.email} className="flex justify-between gap-x-6 py-3 hover:bg-gray-600 hover:bg-gray-600/20 px-2 rounded ease-out duration-300 hover:duration-300 cursor-pointer">
-                    <div className="flex min-w-0 gap-x-4">
+                <li key={cat.email} className="flex flex-col sm:flex-row justify-between items-center w-full gap-x-6 py-3 hover:bg-gray-600 hover:bg-gray-600/30 px-2 rounded ease-out duration-300 hover:duration-300 cursor-pointer">
+                    <div className="flex min-w-0 gap-x-4 w-[60%]">
                         <div className="item-list h-12 w-12 rounded-full flex justify-center items-center">
                             {cat.icon}
                         </div>
-                        <div className="min-w-0 flex justify-center items-center">
-                            <p className="text-sm md:text-md  leading-6 text-white-900">{cat.name}</p>
+                        <div className="min-w-0 flex justify-center items-center flex-1">
+                            <p className="text-sm md:text-md w-full leading-6 text-white-900">{cat.name}</p>
                         </div>
                     </div>
                     <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
