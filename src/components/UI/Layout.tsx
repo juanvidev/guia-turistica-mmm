@@ -25,7 +25,7 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
 
 
     return (
-        <div style={{ height: screenSize.dynamicHeight }} className="relative w-full flex min-w-[430px] flex-col items-center bg-gray-900 text-white overflow-hidden">
+        <div style={{ height: screenSize.dynamicHeight }} className="relative w-full flex flex-col items-center bg-gray-900 text-white overflow-hidden">
             <div className="absolute top-[30%] rotate-12 opacity-[.05] z-1">
                 <img src={logocnc} alt="" width={300} />
             </div>
