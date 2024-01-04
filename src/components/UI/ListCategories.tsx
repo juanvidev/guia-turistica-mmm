@@ -6,6 +6,7 @@ import { FaBuildingFlag } from "react-icons/fa6";
 import { MdOutlineRestaurant } from "react-icons/md";
 import { IoFastFoodOutline } from "react-icons/io5";
 import { MdOutlineLocalMall } from "react-icons/md";
+import { FaCar } from "react-icons/fa";
 
 const icons = [
     <FaBuildingFlag className="text-gray-100 text-2xl" />,
@@ -14,6 +15,7 @@ const icons = [
     <MdOutlineRestaurant className="text-gray-100 text-2xl" />,
     <MdOutlineLocalMall className="text-gray-100 text-2xl" />,
     <MdOutlineCurrencyExchange className="text-gray-100 text-2xl" />,
+    <FaCar className="text-gray-100 text-2xl" />,
 ]
 
 const categoriesWithIcons = categories.map((cat, index) => ({
@@ -29,7 +31,7 @@ const ListCategories = () => {
         <ul className="w-full sm:w-[400px]" role="list">
             {
                 categoriesWithIcons.map((cat) => (
-                    <Link to={`/${cat.url}`} state={{ places: cat.places, category: cat.name }} key={cat.email} className="flex flex-col sm:flex-row justify-between items-center w-full gap-x-6 py-3 hover:bg-gray-600 hover:bg-gray-600/30 px-2 rounded ease-out duration-300 hover:duration-300 cursor-pointer">
+                    <Link to={`/${cat.url}`} state={{ places: cat.places, transports: cat.transports, category: cat.name }} key={cat.email} className="flex flex-col sm:flex-row justify-between items-center w-full gap-x-6 py-3 hover:bg-gray-600 hover:bg-gray-600/30 px-2 rounded ease-out duration-300 hover:duration-300 cursor-pointer">
                         <div className="flex min-w-0 gap-x-4 w-[60%]">
                             <div className="item-list h-12 w-12 rounded-full flex justify-center items-center">
                                 {cat.icon}

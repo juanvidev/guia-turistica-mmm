@@ -45,6 +45,11 @@ export const categories = [
                 ubication: 'https://maps.app.goo.gl/oNeUA4xrrnYygri48',
             },
             {
+                place_name: 'Lago de la Babilla',
+                imageUrl: 'https://www.qhubocali.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-29-at-4.30.15-PM.jpeg',
+                ubication: 'https://maps.app.goo.gl/8uymxhCtpPZGQE3D8',
+            },
+            {
                 place_name: 'EcoParque Lago de las Garzas',
                 imageUrl: 'https://habemusvacaciones.com/admin/fotos/fotolugar_4.jpg',
                 ubication: 'https://maps.app.goo.gl/AZP2P3zr6Bt19moy9',
@@ -75,7 +80,7 @@ export const categories = [
                 ubication: 'https://maps.app.goo.gl/9KCnRWy3SvDViXvh8',
             },
             {
-                place_name: 'Racamandapa',
+                place_name: 'Racamandapa - Dapa',
                 imageUrl: 'https://scontent.fclo14-1.fna.fbcdn.net/v/t39.30808-6/312976989_5392841057432305_7617542937639877100_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeEDsvBV5VHMQyssDCEcDEH-fPSZExN4DMN89JkTE3gMwxZ6xJL4kwDG16jL01NoreMRB1zdvyqgHHUr2ZRF7lq8&_nc_ohc=xB-zG2ZbXxMAX8TCQeA&_nc_ht=scontent.fclo14-1.fna&oh=00_AfCl-cp1er9EOg_AP_EukzvttPuWbWhCffBvyjnke5Jtsw&oe=6598BD13',
                 ubication: 'https://maps.app.goo.gl/6ZXYSuSRgALbUaQq7',
             },
@@ -225,6 +230,28 @@ export const categories = [
                 ubication: 'https://maps.app.goo.gl/TCMQ9iYiPhMuxZDu7',
                 page: "https://casascambio.com/colombia/cali/"
             }
+        ]
+
+    },
+    {
+        name: 'Transporte',
+        email: 'courtney.transpor@example.com',
+        role: 'Actualizado',
+        lastSeen: '3h ago',
+        lastSeenDateTime: '2023-01-23T13:23Z',
+        url: 'transport',
+        places: [],
+        transports: [
+            {
+                name: "InDrive",
+                appUrl: "https://play.google.com/store/apps/details?id=sinet.startup.inDriver&pcampaignid=web_share",
+                appImage: "https://play-lh.googleusercontent.com/_451OHm7ZjzFVbUcmQ6M9u1DboTB1k-3tZaLZMKvgPGOXYVXdZhoekY-IOxNAIhqSA=w240-h480-rw"
+            },
+            {
+                name: 'Didi',
+                appUrl: "https://play.google.com/store/apps/details?id=com.didiglobal.passenger&pcampaignid=web_share",
+                appImage: "https://play-lh.googleusercontent.com/ngZqU1lkyADi-L6j9tWtM5mQS8BfpLr-JivKADttCdUAkIWi36VdZIA_SPZf8A-Jfeg=w240-h480-rw"
+            },
         ]
 
     },
