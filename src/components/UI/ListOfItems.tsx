@@ -2,6 +2,7 @@ import { FC } from "react"
 import { useLocation } from "react-router-dom"
 import { IoOpenOutline } from "react-icons/io5";
 import { FiMapPin } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 
 type PlaceProps = {
     place_name?: string,
@@ -18,9 +19,10 @@ type TransportProps = {
 
 const ListOfItems: FC = () => {
     const { state } = useLocation();
+    const idCategory = state.idCategory;
     const places = state.places;
     const transports = state.transports;
-
+    const { t } = useTranslation();
     const handleClick = (place: PlaceProps) => {
 
         if (place.page) return;
@@ -39,8 +41,8 @@ const ListOfItems: FC = () => {
             <div className="grid grid-cols-2 gap-x-2 gap-y-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
 
                 {
-                    places.length !== 0 ? places.map(({ page, ...place }: PlaceProps) =>
-                        <div key={place.place_name} onClick={() => handleClick({ ...place, page: page })} className="group h-[200px] md:h-auto overflow-hidden rounded-lg border-[1px] border-slate-500/50 ease-in-out duration-300 hover:duration-300 hover:bg-gray-600/30">
+                    places.length !== 0 ? places.map(({ page, ...place }: PlaceProps, index: number) =>
+                        <div key={place.place_name} onClick={() => handleClick({ ...place, page: page })} className="group cursor-pointer h-[200px] md:h-auto overflow-hidden rounded-lg border-[1px] border-slate-500/50 ease-in-out duration-300 hover:duration-300 hover:bg-gray-600/30">
                             <div className="aspect-h-1 h-[75%] aspect-w-1 w-full overflow-hidden rounded-t-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                                 <img
                                     width={200}
@@ -51,7 +53,7 @@ const ListOfItems: FC = () => {
                                 />
                             </div>
                             <div className="flex p-1 sm:p-2 ">
-                                <h3 className="text-sm  p-1 sm:p-2 sm:text-lg flex-1 font-semibold text-white">{place.place_name}</h3>
+                                <h3 className="text-sm  p-1 sm:p-2 sm:text-lg flex-1 font-semibold text-white">{t(`${idCategory}-place-name-${index + 1}`)}</h3>
                                 {page && (
                                     <>
                                         <a className="mr-4" target="_blank" href={page} >

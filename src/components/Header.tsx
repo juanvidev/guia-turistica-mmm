@@ -1,11 +1,12 @@
 import { useLocation, useNavigate } from 'react-router'
 import LogoMMM from '../assets/logommm.png'
 import I18nWidget from './UI/I18nWidget';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
     const navigate = useNavigate();
     const location = useLocation();
-
+    const { t } = useTranslation();
     const { state } = useLocation();
 
     const handleBack = () => {
@@ -17,8 +18,8 @@ const Header = () => {
         <>
             <div className="px-10 flex flex-col pt-4 justify-center items-center h-[22%] w-full z-10">
                 <img className='mb-5 object-contain' width={50} src={LogoMMM} alt="LogoMMM" />
-                <h1 className="text-md md:text-2xl text-center">Convención Nacional de Colombia 2024</h1>
-                <h1 className="text-3xl md:text-4xl font-bold text-center">Guía Turística</h1>
+                <h1 className="text-md md:text-2xl text-center">{t('subtitle-app')}</h1>
+                <h1 className="text-3xl md:text-4xl font-bold text-center">{t('title-app')}</h1>
                 <I18nWidget />
             </div>
             {
@@ -31,7 +32,7 @@ const Header = () => {
                                     d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                             </svg>
                         </button>
-                        <h2 className="text-md w-full text-left font-normal text-white">{state ? state.category : ''}</h2>
+                        <h2 className="text-md w-full text-left font-normal text-white">{state ? t(state.idCategory) : ''}</h2>
                     </div>
                 )
             }
