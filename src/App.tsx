@@ -8,7 +8,6 @@ import { initReactI18next } from 'react-i18next';
 import i18n from 'i18next';
 import translationEN from '../locales/en.json';
 import translationES from '../locales/es.json';
-import I18nWidget from './components/UI/I18nWidget';
 
 // Configuración de i18next
 i18n
@@ -34,7 +33,6 @@ const App = () => {
 
   return (
     <Layout>
-      <I18nWidget />
       <Header />
       <Routes>
         <Route path="/" element={<Content />} />

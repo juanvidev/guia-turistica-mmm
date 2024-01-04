@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from 'react-router'
 import LogoMMM from '../assets/logommm.png'
+import I18nWidget from './UI/I18nWidget';
 
 const Header = () => {
     const navigate = useNavigate();
@@ -14,12 +15,13 @@ const Header = () => {
 
     return (
         <>
-            <div className="px-10 flex flex-col pt-4 justify-center items-center h-[22%] w-full">
+            <div className="px-10 flex flex-col pt-4 justify-center items-center h-[24%] w-full z-10">
                 <img className='mb-5 object-contain' width={60} src={LogoMMM} alt="LogoMMM" />
                 <h1 className="text-md md:text-2xl text-center">Convención Nacional de Colombia 2024</h1>
                 <h1 className="text-3xl md:text-4xl font-bold text-center">Guía Turística</h1>
+                <I18nWidget />
             </div>
-            <div className="flex mb-5 w-full sm:w-[40%] z-10 px-5">
+            <div className="flex w-full sm:w-[40%] z-10 px-5">
                 {
                     location.pathname !== '/' && (
                         <>
