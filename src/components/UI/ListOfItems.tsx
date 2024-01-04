@@ -72,7 +72,7 @@ const ListOfItems: FC = () => {
                         : (
 
                             transports.map((transport: { name: string, appUrl: string, appImage: string }) =>
-                                <div key={transport.appUrl} onClick={() => handleClickTransport(transport)} className="group h-[200px] md:h-auto overflow-hidden min-w-[200px] rounded-lg border-[1px] border-slate-500/50 ease-in-out duration-300 hover:duration-300 hover:bg-gray-600/30">
+                                <div key={transport.appUrl} onClick={() => handleClickTransport(transport)} className="group h-[200px] md:h-auto overflow-hidden rounded-lg border-[1px] border-slate-500/50 ease-in-out duration-300 hover:duration-300 hover:bg-gray-600/30">
                                     <div className="aspect-h-1 h-[75%] aspect-w-1 w-full overflow-hidden rounded-t-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                                         <img
                                             width={200}
