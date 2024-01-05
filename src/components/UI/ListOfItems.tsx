@@ -86,7 +86,7 @@ const ListOfItems: FC = () => {
                                         />
                                     </div>
                                     <div className="flex p-1 sm:p-2 ">
-                                        <h3 className="text-sm text-center p-1 sm:p-2 sm:text-lg flex-1 font-semibold text-white">{transport.name}</h3>
+                                        <h3 className="text-sm text-center p-1 sm:p-2 sm:text-lg flex-1 font-semibold text-gray-900 sm:text-white">{transport.name}</h3>
                                     </div>
                                 </div>
                             )
