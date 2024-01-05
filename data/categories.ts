@@ -113,7 +113,7 @@ export const categories = [
             {
                 place_name: 'San Antonio',
                 imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvXruCyEiFP9HL2YAOHtCy1tuATGYHXCSGow&usqp=CAU',
-                ubication: 'httphttps://maps.app.goo.gl/ZoqafMWvee69N6aA9',
+                ubication: 'https://maps.app.goo.gl/ZoqafMWvee69N6aA9',
                 page: "https://turismosanantoniocali.com/restaurantes/"
             },
             {
