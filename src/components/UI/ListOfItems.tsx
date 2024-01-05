@@ -53,15 +53,18 @@ const ListOfItems: FC = () => {
                                 />
                             </div>
                             <div className="flex p-1 sm:p-2 ">
-                                <h3 className="text-sm  p-1 sm:p-2 sm:text-lg flex-1 font-semibold text-white">{t(`${idCategory}-place-name-${index + 1}`)}</h3>
+                                <h3 className="text-sm  p-1 sm:p-2 sm:text-lg flex-1 font-semibold text-gray-900 sm:text-white">{t(`${idCategory}-place-name-${index + 1}`)}</h3>
                                 {page && (
                                     <>
                                         <a className="mr-4" target="_blank" href={page} >
                                             <IoOpenOutline className="text-lg sm:text-2xl text-gray-400" />
                                         </a>
-                                        <a target="_blank" href={place.ubication} className="text-lg sm:text-2xl text-gray-400">
-                                            <FiMapPin />
-                                        </a>
+                                        {
+                                            place.ubication && (<a target="_blank" href={place.ubication} className="text-lg sm:text-2xl text-gray-400">
+                                                <FiMapPin />
+                                            </a>
+                                            )
+                                        }
                                     </>
                                 )}
                             </div>

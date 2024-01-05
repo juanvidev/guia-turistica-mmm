@@ -227,7 +227,6 @@ export const categories = [
             {
                 place_name: 'Cambio de dinero',
                 imageUrl: casa,
-                ubication: 'https://maps.app.goo.gl/TCMQ9iYiPhMuxZDu7',
                 page: "https://casascambio.com/colombia/cali/"
             }
         ]
