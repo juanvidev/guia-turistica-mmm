@@ -8,6 +8,7 @@ import { initReactI18next } from 'react-i18next';
 import i18n from 'i18next';
 import translationEN from '../locales/en.json';
 import translationES from '../locales/es.json';
+import 'animate.css';
 
 // Configuración de i18next
 i18n

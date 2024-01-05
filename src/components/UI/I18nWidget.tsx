@@ -17,7 +17,7 @@ const I18nWidget = () => {
             type='button'
             data-dropdown-toggle="dropdownSkidding"
             data-dropdown-offset-distance="10"
-            className="inline-flex items-center font-medium text-gray-900 sm:text-white justify-center mt-2 px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+            className="animate__animated animate__slow animate__flipInX inline-flex items-center font-medium text-gray-900 sm:text-white justify-center mt-2 px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
             <img height={16} width={16} src={i18n.language === 'es' ? flagES : flagEN} />
             <span className="mx-1 uppercase" >{i18n.language}</span>
         </button>

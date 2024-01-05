@@ -37,7 +37,7 @@ const ListCategories = () => {
                     const nameCat = `c${index + 1}`;
 
                     return (
-                        <Link to={`/${cat.url}`} state={{ places: cat.places, transports: cat.transports, idCategory: nameCat, category: cat.name }} key={cat.email} className="flex flex-col sm:flex-row justify-between items-center w-full gap-x-6 py-3 hover:bg-gray-600 hover:bg-gray-600/30 px-2 rounded ease-out duration-300 hover:duration-300 cursor-pointer">
+                        <Link to={`/${cat.url}`} state={{ places: cat.places, transports: cat.transports, idCategory: nameCat, category: cat.name }} key={cat.email} className="animate__animated animate__slideInLeft animate__fast flex flex-col sm:flex-row justify-between items-center w-full gap-x-6 py-3 hover:bg-gray-600 hover:bg-gray-600/30 px-2 rounded ease-out duration-300 hover:duration-300 cursor-pointer">
                             <div className="flex min-w-0 gap-x-4 w-[60%]">
                                 <div className="item-list h-12 w-12 rounded-full flex justify-center items-center">
                                     {cat.icon}

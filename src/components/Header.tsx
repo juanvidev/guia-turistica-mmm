@@ -18,8 +18,8 @@ const Header = () => {
         <>
             <div className="px-10 flex flex-col pt-4 text-gray-900 sm:text-white justify-center items-center h-[22%] w-full z-10">
                 <img className='mb-5 object-contain' width={50} src={LogoMMM} alt="LogoMMM" />
-                <h1 className="text-md md:text-2xl font-semibold text-center">{t('subtitle-app')}</h1>
-                <h1 className="text-3xl md:text-4xl font-bold text-center">{t('title-app')}</h1>
+                <h1 className="animate__animated animate__fadeInDown text-md md:text-2xl font-semibold text-center">{t('subtitle-app')}</h1>
+                <h1 className="animate__animated animate__fadeInDown text-3xl md:text-4xl font-bold text-center">{t('title-app')}</h1>
                 <I18nWidget />
             </div>
             {

@@ -137,7 +137,7 @@ export const categories = [
             {
                 place_name: 'La Novena',
                 imageUrl: 'https://blog.rappi.com/wp-content/uploads/2016/12/01-100-1.jpg',
-                ubication: 'https://maps.app.goo.gl/ryqZTz2LwrQHBanb7',
+                ubication: 'https://maps.app.goo.gl/oJarQqtSFk3vwa5J6',
                 page: "https://www.tripadvisor.co/RestaurantsNear-g297475-d9758109-oa30-Palmetto_Plaza-Cali_Valle_del_Cauca_Department.html"
             },
             {

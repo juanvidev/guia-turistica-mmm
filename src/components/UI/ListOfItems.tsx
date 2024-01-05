@@ -42,13 +42,14 @@ const ListOfItems: FC = () => {
 
                 {
                     places.length !== 0 ? places.map(({ page, ...place }: PlaceProps, index: number) =>
-                        <div key={place.place_name} onClick={() => handleClick({ ...place, page: page })} className="group cursor-pointer h-[200px] bg-white/60 md:h-auto overflow-hidden rounded-lg border-[1px] border-slate-500/50 ease-in-out duration-300 hover:duration-300 hover:bg-gray-600/30">
+                        <div key={place.place_name} onClick={() => handleClick({ ...place, page: page })} className="animate__animated animate__fadeIn group cursor-pointer h-[200px] bg-white/60 sm:bg-transparent md:h-auto overflow-hidden rounded-lg border-[1px] border-slate-500/50 ease-in-out duration-300 hover:duration-300 hover:bg-gray-600/30">
                             <div className="aspect-h-1 h-[75%] aspect-w-1 w-full overflow-hidden rounded-t-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7 ">
                                 <img
                                     width={200}
                                     height={200}
                                     src={place.imageUrl}
                                     alt={place.place_name || ""}
+                                    loading="lazy"
                                     className="h-full w-full object-cover object-center group-hover:opacity-75 group-hover:duration-300 ease-in-out duration-300"
                                 />
                             </div>
@@ -76,12 +77,13 @@ const ListOfItems: FC = () => {
 
                             transports.map((transport: { name: string, appUrl: string, appImage: string }) =>
                                 <div key={transport.appUrl} onClick={() => handleClickTransport(transport)} className="group h-[200px] md:h-auto overflow-hidden rounded-lg border-[1px] border-slate-500/50 ease-in-out duration-300 hover:duration-300 hover:bg-gray-600/30">
-                                    <div className="aspect-h-1 h-[75%] aspect-w-1 w-full overflow-hidden rounded-t-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                    <div className="aspect-h-1 h-[75%] aspect-w-1 w-full overflow-hidden rounded-t-lg animate__animated animate__fadeIn bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                                         <img
                                             width={200}
                                             height={200}
                                             src={transport.appImage}
                                             alt={transport.name || ""}
+                                            loading="lazy"
                                             className="h-full w-full object-cover object-center group-hover:opacity-75 group-hover:duration-300 ease-in-out duration-300"
                                         />
                                     </div>
