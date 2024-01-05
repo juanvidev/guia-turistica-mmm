@@ -98,11 +98,10 @@
 
 @media screen and (max-width: 639px) {
   .bg-cnc {
-    background-image: url("./assets/fondo-cnc.jpg");
+    background-image: url("./assets/fondocnc.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
     /* background: radial-gradient(
         ellipse farthest-corner at right bottom,
         #fedb37 0%,
