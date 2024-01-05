@@ -32,7 +32,7 @@ const Header = () => {
                                     d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                             </svg>
                         </button>
-                        <h2 className="text-md w-full text-left font-normal text-gray-900 sm:text-white">{state ? t(state.idCategory) : ''}</h2>
+                        <h2 className="text-md w-full text-left font-semibold text-gray-900 sm:text-white">{state ? t(state.idCategory) : ''}</h2>
                     </div>
                 )
             }
