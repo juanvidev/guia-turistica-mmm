@@ -4,7 +4,7 @@ import img from '../../assets/fondocnc.svg';
 
 const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => {
     const [isLoading, setIsLoading] = useState(true);
-    const [isLoaded, setIsLoaded] = useState(false);
+    // const [isLoaded, setIsLoaded] = useState(false);
 
     // const { innerHeight: height } = window;
     const [screenSize, getDimension] = useState({
@@ -13,7 +13,7 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
     });
 
     const handleLoadImg = () => {
-        setIsLoaded(true);
+        // setIsLoaded(true);
         setTimeout(() => {
             setIsLoading(false);
         }, 1000);
