@@ -1,5 +1,5 @@
 import { FC, useEffect } from "react"
-import { useLocation, Navigate } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 import { IoOpenOutline } from "react-icons/io5";
 import { FiMapPin } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
