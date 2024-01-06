@@ -41,7 +41,7 @@ const ListOfItems: FC = () => {
 
 
     if(!state.places){
-       return redirect("/")
+       redirect("/")
      }
 
 
