@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react"
+import { FC, useLayoutEffect, useState } from "react"
 import logocnc from '../../assets/logocnc.svg'
 import img from '../../assets/fondocnc.svg';
 
@@ -13,9 +13,9 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
     });
 
 
-    const handleLoad = () => {
-        setIsLoading(false)
-    }
+    // const handleLoad = () => {
+    //     setIsLoading(false)
+    // }
 
     const setDimension = () => {
         getDimension({
@@ -23,15 +23,13 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
             dynamicHeight: window.innerHeight
         })
     }
-    console.log({ isLoading })
-    useEffect(() => {
+    useLayoutEffect(() => {
+        setTimeout(() => {
+            setIsLoading(false)
+        }, 1000)
         window.addEventListener('resize', setDimension);
-        window.addEventListener('load', handleLoad);
-        return () => {
-            window.removeEventListener('resize', setDimension);
-            window.removeEventListener('load', handleLoad);
-        }
-    }, [screenSize, isLoading])
+        return () => window.removeEventListener('resize', setDimension);
+    }, [])
 
     return isLoading ? (
         <div style={{ height: screenSize.dynamicHeight }} className="bg-gray-900 text-white w-full">
@@ -47,7 +45,7 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
             <div className="glow-left z-[5]"></div>
             <div className="glow-right z-[5] opacity-60 md:opacity-100"></div>
 
-            <img src={img} loading="lazy" onLoad={handleLoad} className="absolute w-full object-cover z-[0] h-full block min-[641px]:hidden" alt="" />
+            <img src={img} loading="lazy" className="absolute w-full object-cover z-[0] h-full block min-[641px]:hidden" alt="" />
 
             {children}
         </div>
