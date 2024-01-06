@@ -1,4 +1,4 @@
-import { Route, Routes, redirect } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
