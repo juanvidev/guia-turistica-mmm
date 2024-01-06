@@ -14,9 +14,7 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
 
     const handleLoadImg = () => {
         // setIsLoaded(true);
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 1000);
+        setIsLoading(false);
     }
 
     const setDimension = () => {
