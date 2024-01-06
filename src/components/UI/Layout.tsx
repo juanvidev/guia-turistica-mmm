@@ -4,7 +4,7 @@ import img from '../../assets/fondocnc.svg';
 
 const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => {
     const [isLoading, setIsLoading] = useState(true);
-    // const [isLoaded, setIsLoaded] = useState(false);
+    // }    const [isLoaded, setIsLoaded] = useState(false);
 
     // const { innerHeight: height } = window;
     const [screenSize, getDimension] = useState({
@@ -13,7 +13,6 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
     });
 
     const handleLoadImg = () => {
-        // setIsLoaded(true);
         setIsLoading(false);
     }
 
@@ -26,15 +25,21 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
 
     useEffect(() => {
         window.addEventListener('resize', setDimension);
-        window.addEventListener("load", handleLoadImg);
+        const timeout = setTimeout(() => {
+            setIsLoading(false);
+        }, 2000);
         return () => {
             window.removeEventListener('resize', setDimension);
-            window.removeEventListener("load", handleLoadImg);
+            clearTimeout(timeout);
         }
-    }, [screenSize])
+    }, [screenSize, isLoading])
 
+    return isLoading ? (
+        <div style={{ height: screenSize.dynamicHeight }} className="bg-gray-900 text-white w-full">
+            <h1>Cargando</h1>
+        </div>
 
-    return isLoading ? (<h1>Cargando</h1>) : (
+    ) : (
         <div style={{ height: screenSize.dynamicHeight }} className="relative w-full flex flex-col items-center bg-gray-900 overflow-hidden">
             <div className="absolute top-[30%] rotate-12 opacity-[.05] z-1">
                 <img src={logocnc} alt="" width={300} />
@@ -43,7 +48,7 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
             <div className="glow-left z-[5]"></div>
             <div className="glow-right z-[5] opacity-60 md:opacity-100"></div>
 
-            <img src={img} onLoad={handleLoadImg} className="absolute w-full object-cover z-[0] h-full block min-[641px]:hidden" alt="" />
+            <img src={img} loading="lazy" onLoad={handleLoadImg} className="absolute w-full object-cover z-[0] h-full block min-[641px]:hidden" alt="" />
 
             {children}
         </div>
