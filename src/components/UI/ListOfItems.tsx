@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { useLocation } from "react-router-dom"
+import { useLocation, redirect } from "react-router-dom"
 import { IoOpenOutline } from "react-icons/io5";
 import { FiMapPin } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
@@ -23,6 +23,10 @@ const ListOfItems: FC = () => {
     const places = state.places;
     const transports = state.transports;
     const { t } = useTranslation();
+    
+    
+
+
     const handleClick = (place: PlaceProps) => {
 
         if (place.page) return;
@@ -34,6 +38,12 @@ const ListOfItems: FC = () => {
     const handleClickTransport = (transport: TransportProps) => {
         window.open(transport.appUrl, "_blank")
     }
+
+
+    if(!state.places){
+       return redirect("/")
+     }
+
 
     return (
         <div className="mx-auto overflow-scroll max-w-2xl px-4 flex-1 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 z-10">
