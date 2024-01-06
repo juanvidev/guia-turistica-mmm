@@ -4,7 +4,7 @@ import img from '../../assets/fondocnc.svg';
 
 const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => {
     const [isLoading, setIsLoading] = useState(true);
-    // }    const [isLoaded, setIsLoaded] = useState(false);
+    // const [isLoaded, setIsLoaded] = useState(false);
 
     // const { innerHeight: height } = window;
     const [screenSize, getDimension] = useState({
@@ -12,8 +12,9 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
         dynamicHeight: window.innerHeight
     });
 
-    const handleLoadImg = () => {
-        setIsLoading(false);
+
+    const handleLoad = () => {
+        setIsLoading(false)
     }
 
     const setDimension = () => {
@@ -22,15 +23,13 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
             dynamicHeight: window.innerHeight
         })
     }
-
+    console.log({ isLoading })
     useEffect(() => {
         window.addEventListener('resize', setDimension);
-        const timeout = setTimeout(() => {
-            setIsLoading(false);
-        }, 2000);
+        window.addEventListener('load', handleLoad);
         return () => {
             window.removeEventListener('resize', setDimension);
-            clearTimeout(timeout);
+            window.removeEventListener('load', handleLoad);
         }
     }, [screenSize, isLoading])
 
@@ -48,7 +47,7 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
             <div className="glow-left z-[5]"></div>
             <div className="glow-right z-[5] opacity-60 md:opacity-100"></div>
 
-            <img src={img} loading="lazy" onLoad={handleLoadImg} className="absolute w-full object-cover z-[0] h-full block min-[641px]:hidden" alt="" />
+            <img src={img} loading="lazy" onLoad={handleLoad} className="absolute w-full object-cover z-[0] h-full block min-[641px]:hidden" alt="" />
 
             {children}
         </div>
