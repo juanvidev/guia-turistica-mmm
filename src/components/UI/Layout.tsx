@@ -35,7 +35,7 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
     useLayoutEffect(() => {
 
         const timeout = setTimeout(() => {
-            setIsLoading(true)
+            setIsLoading(isLoaded ? false : true)
         }, 1300);
 
         return () => {
