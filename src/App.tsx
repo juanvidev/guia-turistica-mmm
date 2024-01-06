@@ -1,4 +1,4 @@
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes, Navigate, Redirect} from "react-router-dom";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -36,14 +36,15 @@ const App = () => {
     <Layout>
       <Header />
       <Routes>
+       <Switch>
         <Route path="/" element={<Content />} />
         <Route path="/:category" element={<ListOfItems />} />
 
 
-<Route
-        path="*"
-        element={<Navigate to="/" replace />}
-    />
+<Route path="*" render={() => <Redirect to="/" />} />
+
+</Switch>
+
       </Routes>
       <Footer />
     </Layout>
