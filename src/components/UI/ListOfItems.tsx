@@ -1,4 +1,4 @@
-import { FC } from "react"
+import { FC, useEffect } from "react"
 import { useLocation, Navigate } from "react-router-dom"
 import { IoOpenOutline } from "react-icons/io5";
 import { FiMapPin } from "react-icons/fi";
@@ -39,7 +39,9 @@ const ListOfItems: FC = () => {
         window.open(transport.appUrl, "_blank")
     }
 
-    { !places && <Navigate to="/" /> }
+    useEffect(() => {
+        console.log(state);
+    }, [state])
 
 
     return (
