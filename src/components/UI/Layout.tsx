@@ -13,9 +13,10 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
     });
 
     const handleLoadImg = () => {
-
         setIsLoaded(true);
-
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 1000);
     }
 
     const setDimension = () => {
@@ -26,16 +27,13 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
     }
 
     useEffect(() => {
-        if (isLoaded) {
-            setIsLoading(false);
-        }
         window.addEventListener('resize', setDimension);
         window.addEventListener("load", handleLoadImg);
         return () => {
             window.removeEventListener('resize', setDimension);
             window.removeEventListener("load", handleLoadImg);
         }
-    }, [screenSize, isLoaded])
+    }, [screenSize])
 
 
     return isLoading && !isLoaded ? (<h1>Cargando</h1>) : (
