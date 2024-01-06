@@ -52,7 +52,7 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
                     (
                         <div style={{ height: screenSize.dynamicHeight }} className="bg-loader flex-col bg-gray-900 text-white w-full flex justify-center items-center">
                             <div className="flex flex-row w-[40%] items-center justify-evenly ">
-                                <img className='animate__animated animate__fadeIn animate__fast object-contain' loading='lazy' width={80} src={LogoMMM} alt="LogoMMM" />
+                                <img className='animate__animated animate__fadeIn animate__fast object-contain' width={80} src={LogoMMM} alt="LogoMMM" />
                                 <img className='animate__animated animate__fadeIn animate__fast md:w-[60px] z-10' src={logocnc} alt="LogoCNC2024" width={70} />
                             </div>
                             <PropagateLoader className="py-6" color="#111827" size={25} />
