@@ -36,7 +36,7 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
     }, [screenSize])
 
 
-    return isLoading && !isLoaded ? (<h1>Cargando</h1>) : (
+    return isLoading ? (<h1>Cargando</h1>) : (
         <div style={{ height: screenSize.dynamicHeight }} className="relative w-full flex flex-col items-center bg-gray-900 overflow-hidden">
             <div className="absolute top-[30%] rotate-12 opacity-[.05] z-1">
                 <img src={logocnc} alt="" width={300} />
