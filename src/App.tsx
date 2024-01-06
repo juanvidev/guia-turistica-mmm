@@ -38,6 +38,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Content />} />
         <Route path="/:category" element={<ListOfItems />} />
+
+
+<Redirect from='*' to='/' />
       </Routes>
       <Footer />
     </Layout>
