@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { useLocation, redirect } from "react-router-dom"
+import { useLocation, redirect, Navigate } from "react-router-dom"
 import { IoOpenOutline } from "react-icons/io5";
 import { FiMapPin } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
@@ -23,8 +23,8 @@ const ListOfItems: FC = () => {
     const places = state.places;
     const transports = state.transports;
     const { t } = useTranslation();
-    
-    
+
+
 
 
     const handleClick = (place: PlaceProps) => {
@@ -39,10 +39,7 @@ const ListOfItems: FC = () => {
         window.open(transport.appUrl, "_blank")
     }
 
-
-    if(!state.places){
-       redirect("/")
-     }
+    { !places && <Navigate to="/" /> }
 
 
     return (
