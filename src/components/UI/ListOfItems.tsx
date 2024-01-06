@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { useLocation, redirect } from "react-router-dom"
+import { useLocation, Navigate } from "react-router-dom"
 import { IoOpenOutline } from "react-icons/io5";
 import { FiMapPin } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
@@ -18,30 +18,21 @@ type TransportProps = {
 }
 
 const ListOfItems: FC = () => {
-    const { state } = useLocation();
-    const idCategory = state.idCategory;
-    const places = state.places;
-    const transports = state.transports;
+
     const { t } = useTranslation();
+    const { state = {} } = useLocation();
 
+    if (!state) return <Navigate to="/" replace />;
 
-
+    const { idCategory, places, transports } = state;
 
     const handleClick = (place: PlaceProps) => {
-
         if (place.page) return;
-
-
         window.open(place.ubication, "_blank")
     }
 
     const handleClickTransport = (transport: TransportProps) => {
         window.open(transport.appUrl, "_blank")
-    }
-
-
-    if (!state.places) {
-        redirect("/")
     }
 
 

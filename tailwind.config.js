@@ -9,6 +9,12 @@ export default {
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
+
+    extend: {
+      backgroundImage: {
+        'bg-cnc': "url('/src/assets/fondocnc.svg')",
+      }
+    },
     accentColor: ({ theme }) => ({
       ...theme('colors'),
       auto: 'auto',
