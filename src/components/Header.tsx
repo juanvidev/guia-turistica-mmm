@@ -24,7 +24,7 @@ const Header = () => {
                 <div className='flex justify-center items-center'>
                     <I18nWidget />
                     <div className='mt-2 flex items-center'>
-                        <a className='text-xl' href="https://maps.app.goo.gl/btS3rLW4dCYHS5iH6" target='_blank'>
+                        <a className='text-xl' href="https://maps.app.goo.gl/DEWe2tUXFfYsDtc9A" target='_blank'>
                             <MdOutlinePlace />
                         </a>
                         <h3>{t('coliseum')}</h3>
