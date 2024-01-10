@@ -1,6 +1,7 @@
 {
   "title-app": "Guía Turística",
   "subtitle-app": "Convención Nacional de Colombia 2024",
+  "coliseum": "Coliseo",
   "c1": "Sitios turisticos - Cali",
   "c2": "Sitios turisticos - Afueras de Cali",
   "c3": "Comederos",
@@ -8,6 +9,7 @@
   "c5": "Centros Comerciales",
   "c6": "Casas de Cambio",
   "c7": "Transporte",
+  "c8": "Ayuda",
   "c1-place-name-1": "Mirador Cristo Rey",
   "c1-place-name-2": "Monumento Sebastián de Belalcázar",
   "c1-place-name-3": "Mirador Iglesia San Antonio",
@@ -37,7 +39,8 @@
   "c5-place-name-1": "Chipichape",
   "c5-place-name-2": "Centenario",
   "c5-place-name-3": "Cosmocentro",
-  "c5-place-name-4": "Palmetto Plaza",
-  "c5-place-name-5": "Unicentro",
+  "c5-place-name-4": "Jardín Plaza",
+  "c5-place-name-5": "Palmetto Plaza",
+  "c5-place-name-6": "Unicentro",
   "c6-place-name-1": "Sedes"
 }

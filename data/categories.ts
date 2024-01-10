@@ -204,6 +204,11 @@ export const categories = [
                 ubication: 'https://maps.app.goo.gl/9cCzgeqUpyGmHqYy6',
             },
             {
+                place_name: 'Jardín Plaza',
+                imageUrl: 'https://www.laopinion.com.co/sites/default/files/2019/02/14/imagen/jardin.jpg',
+                ubication: 'https://g.co/kgs/TprNJZB',
+            },
+            {
                 place_name: 'Palmetto Plaza',
                 imageUrl: 'https://pictures.domus.la/inmobiliaria_77/7479_15_90101906.jpg',
                 ubication: 'https://maps.app.goo.gl/AZzMjkNrMq18cbKa6',
@@ -254,4 +259,15 @@ export const categories = [
         ]
 
     },
+    // {
+    //     name: 'Ayuda',
+    //     url: 'help',
+    //     email: 'courtney.help@example.com',
+    //     numbers:[
+    //         {
+    //             delegation: 'Delegacion de Panamá',
+    //             number: '+3173503555',
+    //         },
+    //     ]
+    // }
 ]

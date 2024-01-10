@@ -2,6 +2,7 @@ import { useLocation, useNavigate } from 'react-router'
 import LogoMMM from '../assets/logommm.png'
 import I18nWidget from './UI/I18nWidget';
 import { useTranslation } from 'react-i18next';
+import { MdOutlinePlace } from "react-icons/md";
 
 const Header = () => {
     const navigate = useNavigate();
@@ -20,7 +21,16 @@ const Header = () => {
                 <img className='animate__animated animate__fadeIn animate__delay-1s mb-5 object-contain' loading='lazy' width={50} src={LogoMMM} alt="LogoMMM" />
                 <h1 className="animate__animated animate__fadeInDown text-md md:text-2xl font-semibold text-center">{t('subtitle-app')}</h1>
                 <h1 className="animate__animated animate__fadeInDown text-3xl md:text-4xl font-bold text-center">{t('title-app')}</h1>
-                <I18nWidget />
+                <div className='flex justify-center items-center'>
+                    <I18nWidget />
+                    <div className='mt-2 flex items-center'>
+                        <a className='text-xl' href="https://maps.app.goo.gl/btS3rLW4dCYHS5iH6" target='_blank'>
+                            <MdOutlinePlace />
+                        </a>
+                        <h3>{t('coliseum')}</h3>
+                    </div>
+                </div>
+
             </div>
             {
                 location.pathname !== '/' && (

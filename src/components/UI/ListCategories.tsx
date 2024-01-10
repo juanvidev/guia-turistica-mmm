@@ -8,6 +8,7 @@ import { IoFastFoodOutline } from "react-icons/io5";
 import { MdOutlineLocalMall } from "react-icons/md";
 import { FaCar } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { FaHandsHelping } from "react-icons/fa";
 
 const icons = [
     <FaBuildingFlag className="text-gray-100 text-2xl" />,
@@ -17,6 +18,7 @@ const icons = [
     <MdOutlineLocalMall className="text-gray-100 text-2xl" />,
     <MdOutlineCurrencyExchange className="text-gray-100 text-2xl" />,
     <FaCar className="text-gray-100 text-2xl" />,
+    <FaHandsHelping className="text-gray-100 text-2xl" />,
 ]
 
 const categoriesWithIcons = categories.map((cat, index) => ({

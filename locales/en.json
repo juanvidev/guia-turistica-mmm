@@ -1,5 +1,6 @@
 {
   "title-app": "Guide Book",
+  "coliseum": "Coliseum",
   "subtitle-app": "Colombia National Convention 2024",
   "c1": "Tourist sites - Cali",
   "c2": "Tourist sites - Outskirts of Cali",
@@ -8,6 +9,7 @@
   "c5": "Shopping Centers",
   "c6": "Money Exchange",
   "c7": "Transport",
+  "c8": "Help",
   "c1-place-name-1": "Cristo Rey Monument",
   "c1-place-name-2": "Sebastián de Belalcázar Monument",
   "c1-place-name-3": "Lookout San Antonio Church",
@@ -37,7 +39,8 @@
   "c5-place-name-1": "Chipichape Mall",
   "c5-place-name-2": "Centenario Mall",
   "c5-place-name-3": "Cosmocentro Mall",
-  "c5-place-name-4": "Palmetto Plaza Mall",
-  "c5-place-name-5": "Unicentro Mall",
+  "c5-place-name-4": "Jardín Plaza Mall",
+  "c5-place-name-5": "Palmetto Plaza Mall",
+  "c5-place-name-6": "Unicentro Mall",
   "c6-place-name-1": "Headquarters"
 }
