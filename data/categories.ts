@@ -81,7 +81,7 @@ export const categories = [
             },
             {
                 place_name: 'Racamandapa - Dapa',
-                imageUrl: 'https://scontent.fclo14-1.fna.fbcdn.net/v/t39.30808-6/312976989_5392841057432305_7617542937639877100_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeEDsvBV5VHMQyssDCEcDEH-fPSZExN4DMN89JkTE3gMwxZ6xJL4kwDG16jL01NoreMRB1zdvyqgHHUr2ZRF7lq8&_nc_ohc=xB-zG2ZbXxMAX8TCQeA&_nc_ht=scontent.fclo14-1.fna&oh=00_AfCl-cp1er9EOg_AP_EukzvttPuWbWhCffBvyjnke5Jtsw&oe=6598BD13',
+                imageUrl: 'https://www.livevalledelcauca.com/assets/images/yumbo/restaurante-racamandapa-1.webp',
                 ubication: 'https://maps.app.goo.gl/6ZXYSuSRgALbUaQq7',
             },
             {
