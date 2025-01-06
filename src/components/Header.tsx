@@ -2,7 +2,6 @@ import { useLocation, useNavigate } from 'react-router'
 import LogoMMM from '../assets/logommm.png'
 import I18nWidget from './UI/I18nWidget';
 import { useTranslation } from 'react-i18next';
-import { MdOutlinePlace } from "react-icons/md";
 
 const Header = () => {
     const navigate = useNavigate();

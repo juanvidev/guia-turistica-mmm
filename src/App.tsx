@@ -1,5 +1,4 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
-import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Layout from "./components/UI/Layout";
@@ -9,10 +8,8 @@ import i18n from 'i18next';
 import translationEN from '../locales/en.json';
 import translationES from '../locales/es.json';
 import 'animate.css';
-import ListCategories from './components/UI/ListItems';
 import Home from './components/Home';
 import CategoryPage from './pages/CategoryPage';
-import CityPage from './pages/CityPage';
 
 
 
