@@ -12,7 +12,7 @@ export default {
 
     extend: {
       backgroundImage: {
-        'bg-cnc': "url('/src/assets/fondocnc.svg')",
+        'bg-cnc': "url('/src/assets/fondocnc.png')",
       }
     },
     accentColor: ({ theme }) => ({

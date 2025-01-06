@@ -1,4 +1,3 @@
-import { categoriesCali } from '../../data/categories_cali';
 import { MdOutlineCurrencyExchange } from "react-icons/md";
 import { FaPersonHiking } from "react-icons/fa6";
 import { FaBuildingFlag } from "react-icons/fa6";
@@ -7,9 +6,8 @@ import { IoFastFoodOutline } from "react-icons/io5";
 import { MdOutlineLocalMall } from "react-icons/md";
 import { FaCar } from "react-icons/fa";
 import { FaHandsHelping } from "react-icons/fa";
-import { CategoryProps } from "../types/types";
-import ListItems from "./UI/ListItems";
-
+import { IListItem } from "../types/types";
+import ListItems from '../components/UI/ListItems';
 
 const icons = [
     <FaBuildingFlag className="text-gray-100 text-2xl" />,
@@ -22,17 +20,27 @@ const icons = [
     <FaHandsHelping className="text-gray-100 text-2xl" />,
 ]
 
-const categoriesList: CategoryProps[] = categoriesCali.map((cat, index) => ({
-    ...cat,
-    icon: icons[index],
-}));
-const Content = () => {
+const citiesList: IListItem[] = [
+    {
+        name: "cali",
+        url: "cali",
+    },
+    {
+        name: "ibague",
+        url: "ibague",
+    },
+    {
+        name: "barranquilla",
+        url: "barranquilla",
+    }
+]
+
+const CityPage = () => {
     return (
         <div className="flex-1 h-[100%] w-full flex-col flex items-center z-10 overflow-scroll overflow-x-hidden" >
-            <h2 className="text-2xl font-semibold text-gray-200">Categorias</h2>
-            <ListItems items={categoriesList} type={"city"} />
+            <ListItems items={citiesList} type={"city"} />
         </div>
     )
 }
 
-export default Content;
+export default CityPage

@@ -1,7 +1,7 @@
 import { FC, useEffect, useLayoutEffect, useState } from "react"
 import logocnc from '../../assets/logocnc.svg'
 import LogoMMM from '../../assets/logommm.png'
-import img from '../../assets/fondocnc.svg';
+import img from '../../assets/fondocnc.png';
 import { PropagateLoader } from "react-spinners";
 
 const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => {
@@ -50,12 +50,12 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
             {
                 isLoading ?
                     (
-                        <div style={{ height: screenSize.dynamicHeight }} className="bg-loader flex-col bg-gray-900 text-white w-full flex justify-center items-center">
+                        <div style={{ height: screenSize.dynamicHeight }} className="bg-loader flex-col bg-gray-900 text-gray-200 w-full flex justify-center items-center">
                             <div className="flex flex-row w-[40%] items-center justify-center">
                                 <img className='animate__animated animate__fadeIn animate__fast object-contain' width={80} src={LogoMMM} alt="LogoMMM" />
-                                <img className='animate__animated animate__fadeIn animate__fast ml-7 md:w-[60px] z-10' src={logocnc} alt="LogoCNC2024" width={70} />
+                                <img className='animate__animated animate__fadeIn animate__fast ml-7 z-10' src={logocnc} alt="LogoCNC2025" width={100} />
                             </div>
-                            <PropagateLoader className="py-6" color="#111827" size={25} />
+                            <PropagateLoader className="py-6" color="#ce143f" size={25} />
                         </div>
 
                     ) : (

@@ -9,35 +9,42 @@ import i18n from 'i18next';
 import translationEN from '../locales/en.json';
 import translationES from '../locales/es.json';
 import 'animate.css';
+import ListCategories from './components/UI/ListItems';
+import Home from './components/Home';
+import CategoryPage from './pages/CategoryPage';
+import CityPage from './pages/CityPage';
 
-// Configuración de i18next
-i18n
-  .use(initReactI18next)
-  .init({
-    resources: {
-      en: {
-        translation: translationEN,
-      },
-      es: {
-        translation: translationES,
-      },
-    },
-    lng: 'es', // Idioma predeterminado
-    fallbackLng: 'en', // Idioma de respaldo si la traducción no está disponible
-    interpolation: {
-      escapeValue: false,
-    },
-  });
+
 
 
 const App = () => {
+
+  // Configuración de i18next
+  i18n
+    .use(initReactI18next)
+    .init({
+      resources: {
+        en: {
+          translation: translationEN,
+        },
+        es: {
+          translation: translationES,
+        },
+      },
+      lng: 'es', // Idioma predeterminado
+      fallbackLng: 'en', // Idioma de respaldo si la traducción no está disponible
+      interpolation: {
+        escapeValue: false,
+      },
+    });
 
   return (
     <Layout>
       <Header />
       <Routes>
-        <Route path="/" element={<Content />} />
-        <Route path="/:category" element={<ListOfItems />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/:city" element={<CategoryPage />} />
+        <Route path="/:city/:category" element={<ListOfItems />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />

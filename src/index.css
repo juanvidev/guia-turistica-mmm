@@ -98,28 +98,27 @@
 
 @media screen and (max-width: 639px) {
   .bg-cnc {
-    background-image: url("./assets/fondocnc.svg");
+    background-image: url("./assets/fondocnc.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  .bg-loader {
-    background: radial-gradient(
-        ellipse farthest-corner at right bottom,
-        #fedb37 0%,
-        #fdb931 8%,
-        #9f7928 30%,
-        #8a6e2f 40%,
-        transparent 80%
-      ),
-      radial-gradient(
-        ellipse farthest-corner at left top,
-        #ffffff 0%,
-        #ffffac 8%,
-        #d1b464 25%,
-        #5d4a1f 62.5%,
-        #5d4a1f 100%
-      );
-  }
+.bg-loader {
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #341efa 0%,
+      #290db4 40%,
+      #1a0883 70%,
+      #09053c 100%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #e0baff 0%,
+      #9b6fd5 40%,
+      #5f34b4 80%,
+      #341efa 100%
+    );
+}
+
 }

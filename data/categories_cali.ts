@@ -1,8 +1,9 @@
 import casa from '../src/assets/casa-cambio.jpg';
+import { CategoryProps } from '../src/types/types';
 
-export const categories = [
+export const categoriesCali: CategoryProps[] = [
     {
-        name: 'Sitios turísticos - Cali',
+        name: 'Sitios turísticos',
         email: 'leslie.alexander@example.com',
         role: 'Actualizado',
         lastSeen: '3h ago',
@@ -101,7 +102,8 @@ export const categories = [
         name: 'Comederos',
         email: 'dries.vincent@example.com',
         role: 'Actualizado',
-        lastSeen: null,
+        lastSeen: "3h ago",
+        lastSeenDateTime: '2023-01-23T13:23Z',
         url: 'resturants-zone',
         places: [
             {
