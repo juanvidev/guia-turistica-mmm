@@ -60,69 +60,6 @@ export const categoriesIbague: CategoryProps[] = [
                 imageUrl: 'https://www.elpais.com.co/resizer/DmSqBGSv0rz3GZbOkDQLzR0Ilfo=/fit-in/1920x0/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/W5GKV5KYLRD6DJQS6MYJKBE6UQ.jpg',
                 ubication: 'https://maps.app.goo.gl/KanbAczYXv8KYgt7A',
             },
-            {
-                place_name: 'Zoológico de Cali',
-                imageUrl: 'https://acodal.com/wp-content/uploads/zoo-cali-web.jpg',
-                ubication: 'https://maps.app.goo.gl/Qt4Yr7quZMcwxVGt7',
-            },
-        ]
-    },
-    {
-        name: 'Comederos',
-        email: 'dries.vincent@example.com',
-        role: 'Actualizado',
-        lastSeen: "3h ago",
-        lastSeenDateTime: '2023-01-23T13:23Z',
-        url: 'resturants-zone',
-        places: [
-            {
-                place_name: 'Granada',
-                imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2q3UUQbLqVuox017BVrc9-57JruihY52H1g&usqp=CAU',
-                ubication: 'https://maps.app.goo.gl/5bJmRxiq2bsusdcU9',
-                page: "https://restaurantescali.yoveo.net/barrios-cali/granada"
-            },
-            {
-                place_name: 'San Antonio',
-                imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvXruCyEiFP9HL2YAOHtCy1tuATGYHXCSGow&usqp=CAU',
-                ubication: 'https://maps.app.goo.gl/ZoqafMWvee69N6aA9',
-                page: "https://turismosanantoniocali.com/restaurantes/"
-            },
-            {
-                place_name: 'Parque del perro',
-                imageUrl: 'https://www.qhubocali.com/wp-content/uploads/2023/03/Parque-del-Perro.jpg',
-                ubication: 'https://maps.app.goo.gl/ZSJXtxmtcXPQ4uto9',
-                page: "https://www.tripadvisor.co/RestaurantsNear-g297475-d8863765-Parque_del_Perro-Cali_Valle_del_Cauca_Department.html"
-            },
-            {
-                place_name: 'Pizeerías Vía Cristo Rey',
-                imageUrl: 'https://www.qhubocali.com/wp-content/uploads/2023/05/d7fc1aef-002b-488f-bca5-57b5f115b2de.jpg',
-                ubication: 'https://maps.app.goo.gl/3a6xNMbsfrjCe2Hw9',
-                page: "https://pizza.guiabbb.co/Cali/Via_a_Cristo_Rey/"
-            },
-            {
-                place_name: 'Alameda',
-                imageUrl: 'https://res.cloudinary.com/tf-lab/image/upload/w_600,h_310,c_fill,g_auto:subject,q_auto,f_auto/restaurant/e279452c-0974-483a-937a-0978f3ec8d03/40525154-92eb-4ed9-b180-e25bba6ccc56.jpg',
-                ubication: 'https://maps.app.goo.gl/RNVeqELwCEuTJpN27',
-                page: "https://www.tripadvisor.co/RestaurantsNear-g297475-d9697410-Galeria_Alameda-Cali_Valle_del_Cauca_Department.html"
-            },
-            {
-                place_name: 'La Novena',
-                imageUrl: 'https://blog.rappi.com/wp-content/uploads/2016/12/01-100-1.jpg',
-                ubication: 'https://maps.app.goo.gl/oJarQqtSFk3vwa5J6',
-                page: "https://www.tripadvisor.co/RestaurantsNear-g297475-d9758109-oa30-Palmetto_Plaza-Cali_Valle_del_Cauca_Department.html"
-            },
-            {
-                place_name: 'Ciudad Jardín',
-                imageUrl: 'https://www.planetasublime.com/wp-content/uploads/2022/10/restaurantes-en-ciudad-jardin-en-cali-planeta-sublime-1.jpeg',
-                ubication: 'https://maps.app.goo.gl/1MmGW3idvihK7BWu6',
-                page: "https://www.degusta.com.co/cali/search?filters=eyJmaWx0ZXJzIjp7fSwic2NvcmVfcmFuZ2UiOnt9LCJuZWlnaGJvcmhvb2QiOlsiQ2l1ZGFkIEphcmTtbiJdLCJzb3J0IjoiZm9vZCJ9"
-            },
-            {
-                place_name: 'Puerto 125',
-                imageUrl: 'https://puerto125.com/wp-content/uploads/2022/10/slider-Imagen02.png',
-                ubication: 'https://maps.app.goo.gl/WZL1nDaZ21W1zy2b7',
-                page: "https://puerto125.com/"
-            },
         ]
     },
     {

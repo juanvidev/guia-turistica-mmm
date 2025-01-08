@@ -23,6 +23,15 @@ const icons = [
     <FaHandsHelping className="text-gray-100 text-2xl" />,
 ]
 
+const iconsIbague = [
+    <FaBuildingFlag className="text-gray-100 text-2xl" />,
+    <MdOutlineRestaurant className="text-gray-100 text-2xl" />,
+    <MdOutlineLocalMall className="text-gray-100 text-2xl" />,
+    <MdOutlineCurrencyExchange className="text-gray-100 text-2xl" />,
+    <FaCar className="text-gray-100 text-2xl" />,
+    <FaHandsHelping className="text-gray-100 text-2xl" />,
+]
+
 
 
 const CategoryPage = () => {
@@ -39,7 +48,7 @@ const CategoryPage = () => {
         case "ibague":
             categories = categoriesIbague.map((cat, index) => ({
                 ...cat,
-                icon: icons[index],
+                icon: iconsIbague[index],
             }));
 
             break;

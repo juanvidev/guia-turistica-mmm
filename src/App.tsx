@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Layout from "./components/UI/Layout";
@@ -7,25 +7,30 @@ import { initReactI18next } from 'react-i18next';
 import i18n from 'i18next';
 import translationEN from '../locales/en.json';
 import translationES from '../locales/es.json';
+import translationESIBA from '../locales/es-iba.json';
+import translationENIBA from '../locales/en-iba.json';
 import 'animate.css';
 import Home from './components/Home';
 import CategoryPage from './pages/CategoryPage';
+import { useEffect, useState } from 'react';
 
 
 
 
 const App = () => {
 
+  const { pathname } = useLocation();
+  const [usePathname, setUsePathaname] = useState("");
   // Configuración de i18next
   i18n
     .use(initReactI18next)
     .init({
       resources: {
         en: {
-          translation: translationEN,
+          translation: usePathname === 'cali' ? translationEN : translationENIBA,
         },
         es: {
-          translation: translationES,
+          translation: usePathname === 'cali' ? translationES : translationESIBA,
         },
       },
       lng: 'es', // Idioma predeterminado
@@ -34,6 +39,13 @@ const App = () => {
         escapeValue: false,
       },
     });
+
+  useEffect(() => {
+    
+    setUsePathaname(pathname.split('/')[1]);
+
+  }, [pathname])
+
 
   return (
     <Layout>
