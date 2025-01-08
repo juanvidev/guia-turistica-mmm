@@ -2,6 +2,7 @@ import { useLocation, useNavigate } from 'react-router'
 import LogoMMM from '../assets/logommm.png'
 import I18nWidget from './UI/I18nWidget';
 import { useTranslation } from 'react-i18next';
+import { MdOutlinePlace } from 'react-icons/md';
 
 const Header = () => {
     const navigate = useNavigate();
@@ -24,12 +25,22 @@ const Header = () => {
                 <h1 className="animate__animated animate__fadeInDown text-3xl md:text-4xl font-bold text-center">{t('title-app')}</h1>
                 <div className='flex justify-center items-center'>
                     <I18nWidget />
-                    {/* <div className='mt-2 flex items-center'>
-                        <a className='text-xl' href="https://maps.app.goo.gl/DEWe2tUXFfYsDtc9A" target='_blank'>
-                            <MdOutlinePlace />
-                        </a>
-                        <h3>{t('coliseum')}</h3>
-                    </div> */}
+                    {
+                        city
+                            ? (
+
+                                <div className='mt-2 flex items-center'>
+                                    <a className='text-xl' href={`${city === 'cali' ? "https://maps.app.goo.gl/PdBNDBBDn7cdEf8J8" : "https://maps.app.goo.gl/murvxkKN39KEYMd87"}`} target='_blank'>
+                                        <MdOutlinePlace />
+                                    </a>
+                                    <h3>{t('coliseum')}</h3>
+                                </div>
+                            )
+                            :
+                            (
+                                null
+                            )
+                    }
                 </div>
 
             </div>
