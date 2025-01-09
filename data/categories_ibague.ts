@@ -1,4 +1,3 @@
-import casa from '../src/assets/casa-cambio.jpg';
 import { CategoryProps } from '../src/types/types';
 
 export const categoriesIbague: CategoryProps[] = [
