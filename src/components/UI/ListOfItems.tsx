@@ -43,7 +43,7 @@ const ListOfItems: FC = () => {
 
                 {
                     places.length !== 0 ? places.map(({ page, ...place }: PlaceProps, index: number) =>
-                        <div key={place.place_name} onClick={() => handleClick({ ...place, page: page })} className="animate__animated animate__fadeIn group cursor-pointer h-[200px] bg-white/60 sm:bg-transparent md:h-auto overflow-hidden rounded-lg border-[1px] border-slate-500/50 ease-in-out duration-300 hover:duration-300 hover:bg-gray-600/30">
+                        <div key={place.place_name} onClick={() => handleClick({ ...place, page: page })} className="animate__animated animate__fadeIn group cursor-pointer h-[200px] bg-white/5 sm:bg-transparent md:h-auto overflow-hidden rounded-lg border-[1px] border-slate-500/50 ease-in-out duration-300 hover:duration-300 hover:bg-gray-600/30">
                             <div className="aspect-h-1 h-[75%] aspect-w-1 w-full overflow-hidden rounded-t-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7 ">
                                 <img
                                     width={200}
