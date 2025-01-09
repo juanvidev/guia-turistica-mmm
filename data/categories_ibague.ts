@@ -8,57 +8,57 @@ export const categoriesIbague: CategoryProps[] = [
         role: 'Actualizado',
         lastSeen: '3h ago',
         lastSeenDateTime: '2023-01-23T13:23Z',
-        url: 'sites-tourist-cali',
+        url: 'sites-tourist',
         places: [
             {
-                place_name: 'Mirador Cristo Rey',
-                imageUrl: 'https://chipviajero.com/wp-content/uploads/2018/10/Como-llegar-al-Cristo-Rey-Cali-Buga-Chip-Viajero-6.jpg',
-                ubication: 'https://maps.app.goo.gl/oBw5S8f9mK1oFMcUA',
+                place_name: 'Cañón del Combeima',
+                imageUrl: 'https://camaleontravel.co/wp-content/uploads/2019/05/LA-RIVERA-3-min-820x553.jpg',
+                ubication: 'https://maps.app.goo.gl/vtJHRf7SXHqNa5He8',
             },
             {
-                place_name: 'Monumento Sebastián de Belalcazar',
-                imageUrl: 'https://www.operadorapuntadeleste.com/Uploads/Circuitos/Fotos/grande/foto_2023-01-14-16-43-50.jpeg',
-                ubication: 'https://maps.app.goo.gl/AaqKanUtKTW3TFbv8',
+                place_name: 'Jardín Botánico San Jorge',
+                imageUrl: 'https://www.appgica.com.co/wp-content/uploads/parque-botanico-san-jorgue.jpg',
+                ubication: 'https://maps.app.goo.gl/iEuMaLzxrhZoLyD89',
             },
             {
-                place_name: 'Mirador Iglesia San Antonio',
-                imageUrl: 'https://scontent-bog1-1.xx.fbcdn.net/v/t1.6435-9/43681903_2105945876085359_3251013166141800448_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=4dc865&_nc_eui2=AeHqfuRRbTS91KgQa7uTuQ_Vfqt-JCWiJgR-q34kJaImBGzPOC8IoqFrH3nPSVzFSNg_knlRO6g0z753O0muZCPz&_nc_ohc=sM3gV4MMVo4AX-39XbW&_nc_ht=scontent-bog1-1.xx&oh=00_AfBKX5tvVuTsb8uYy06ekdQFwLkBeZbveu-3SQzJpTxStw&oe=65BAAB09',
-                ubication: 'https://maps.app.goo.gl/mNrv3dgVpQQgXpsC6',
+                place_name: 'Nevado del Tolima',
+                imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Nevado_del_Tolima_-_Colombia_%288204622886%29.jpg/800px-Nevado_del_Tolima_-_Colombia_%288204622886%29.jpg',
+                ubication: 'https://maps.app.goo.gl/Y9YnUGMpcQGYUCzj8',
             },
             {
-                place_name: 'Museo la Tertulia',
-                imageUrl: 'https://traveler.marriott.com/es/wp-content/uploads/sites/2/2021/12/Museo-La-Tertulia-1920x1080.jpg',
-                ubication: 'https://maps.app.goo.gl/5fpQh5bjy4Drq5wh9',
+                place_name: 'Museo de Arte del Tolima',
+                imageUrl: 'https://elcronista.co/assets/media/495.jpg',
+                ubication: 'https://maps.app.goo.gl/hgJwSf8U3ias2cN66',
             },
             {
-                place_name: 'Museo del Oro Calima',
-                imageUrl: 'https://i.pinimg.com/originals/cf/94/f0/cf94f071765ea699a4a9e04bf5d1f256.jpg',
-                ubication: 'https://maps.app.goo.gl/taSXAVNKSKynAj7e7',
+                place_name: 'Plaza de Bolivar',
+                imageUrl: 'https://www.revistaaxxis.com.co/wp-content/uploads/2022/08/panoptico_ibague_2.jpg',
+                ubication: 'https://maps.app.goo.gl/kFbfsgrCk2RyS9Xv5',
             },
             {
-                place_name: 'Caliwood',
-                imageUrl: 'https://www.orgullodecali.com/wp-content/uploads/2022/05/MUSEO-DE-LA-CINEMATOGRAFIA-CALIWOOD.jpg',
-                ubication: 'https://maps.app.goo.gl/eE1uZhBYHfZYDSTt7',
+                place_name: 'Parque Centenario',
+                imageUrl: 'https://elturismoencolombia.com/storage/2024/04/Parque-centenario-y-Concha-Acustica-Garzon-y-Collazos-en-Ibague-Colombia.jpg',
+                ubication: 'https://maps.app.goo.gl/smdtJycpnjdc48Ce9',
             },
             {
-                place_name: 'Boulevard del Río',
-                imageUrl: 'https://www.orgullodecali.com/wp-content/uploads/2022/01/BOULEVAR-DEL-RIO-CALI.jpg',
-                ubication: 'https://maps.app.goo.gl/oNeUA4xrrnYygri48',
+                place_name: 'La Martinica',
+                imageUrl: 'https://elcronista.co/assets/media/glamping-martinica-un-emprendimiento-para-fortalecer-a-ibague-destino-turistico.jpg',
+                ubication: 'https://maps.app.goo.gl/krihGTtHRhEGJ8LD9',
             },
             {
-                place_name: 'Lago de la Babilla',
-                imageUrl: 'https://www.qhubocali.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-29-at-4.30.15-PM.jpeg',
-                ubication: 'https://maps.app.goo.gl/8uymxhCtpPZGQE3D8',
+                place_name: 'Reserva Orquídeas del Tolima',
+                imageUrl: 'https://lh3.googleusercontent.com/p/AF1QipNa-hwOMIIew-SUt45xWRiFhadDb4gCYtxka39n=s680-w680-h510',
+                ubication: 'https://maps.app.goo.gl/UgzvNJAaDkQCMCAK9',
             },
             {
-                place_name: 'EcoParque Lago de las Garzas',
-                imageUrl: 'https://habemusvacaciones.com/admin/fotos/fotolugar_4.jpg',
-                ubication: 'https://maps.app.goo.gl/AZP2P3zr6Bt19moy9',
+                place_name: 'Parque Murillo Toro',
+                imageUrl: 'https://www.rcnradio.com/_next/image?url=https%3A%2F%2Ffiles.rcnradio.com%2Fpublic%2Fstyles%2F16_9%2Fpublic%2F2022-09%2Fibague.jpg%3FVersionId%3DY1ZzKdxDLAWdXofryR0F01kg3uqUIUdl%26itok%3DE0YietNc&w=3840&q=75',
+                ubication: 'https://maps.app.goo.gl/tePpn8EvdXbEiyLF7',
             },
             {
-                place_name: 'Jardín Botánico',
-                imageUrl: 'https://www.elpais.com.co/resizer/DmSqBGSv0rz3GZbOkDQLzR0Ilfo=/fit-in/1920x0/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/W5GKV5KYLRD6DJQS6MYJKBE6UQ.jpg',
-                ubication: 'https://maps.app.goo.gl/KanbAczYXv8KYgt7A',
+                place_name: 'Casa de la Moneda',
+                imageUrl: 'https://www.banrep.gov.co/sites/default/files/images/fabrica-moneda-fachada.jpg',
+                ubication: 'https://maps.app.goo.gl/bbU1M3jcDFsfTreX8',
             },
         ]
     },
@@ -68,22 +68,42 @@ export const categoriesIbague: CategoryProps[] = [
         role: 'Actualizado',
         lastSeen: '3h ago',
         lastSeenDateTime: '2023-01-23T13:23Z',
-        url: 'resturants',
+        url: 'restaurants',
         places: [
             {
-                place_name: 'La Boquería',
-                imageUrl: 'https://restaurante.guide/wp-content/uploads/2020/03/la-boqueria-logo.jpg',
-                ubication: 'https://maps.app.goo.gl/zW1ubAATV1owek6y6',
+                place_name: 'La Parrilla de Marcos',
+                imageUrl: 'https://cdn0.matrimonio.com.co/vendor/1171/3_2/960/jpg/restaurante_10_121171.jpeg',
+                ubication: 'https://maps.app.goo.gl/BRRWeUtnJxYvLoXc8',
             },
             {
-                place_name: 'Rancho Jonás',
-                imageUrl: 'https://asset1.zankyou.com/images/wervice-card-big/370/735c/1050/800/w/259561/-/1646406866.jpg',
-                ubication: 'https://maps.app.goo.gl/zGDdAzU42YBkcrCA7',
+                place_name: 'Hacienda Res y Pez',
+                imageUrl: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/06/a5/b6/el-restaurante-mas-lindo.jpg?w=400&h=-1&s=1',
+                ubication: 'https://maps.app.goo.gl/4uxauntJxQmdygx3A',
             },
             {
-                place_name: 'Simón Parrilla',
-                imageUrl: 'https://asset1.zankyou.com/images/wervice-card-big/b4e/149b/1050/800/w/663082/-/1534635033.jpg',
-                ubication: 'https://maps.app.goo.gl/dTDnXDLZkid9wPHE9',
+                place_name: 'Paz Restaurante',
+                imageUrl: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/5c/9e/66/fervor-restaurante.jpg?w=400&h=300&s=1',
+                ubication: 'https://maps.app.goo.gl/dAWpSAQZF8gEBPNj8',
+            },
+            {
+                place_name: 'Felo La Serena',
+                imageUrl: 'https://pbs.twimg.com/media/GQuHvNcXYAAERQY.jpg',
+                ubication: 'https://maps.app.goo.gl/xSnxWiy8mRXtsNLE8',
+            },
+            {
+                place_name: 'Origen Restaurante Ibagué',
+                imageUrl: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/11/40/ff/un-lugar-para-sonar.jpg?w=400&h=-1&s=1',
+                ubication: 'https://maps.app.goo.gl/mGVmB5ufhAsvmSrm8',
+            },
+            {
+                place_name: 'Don Pedro Típico – Palermo',
+                imageUrl: 'https://fastly.4sqi.net/img/general/600x600/24223329_IFo7KvEhfVj5Mryu7NTdOsCxL03lQebd3aAxguEjUJo.jpg',
+                ubication: 'https://maps.app.goo.gl/LjmxkPtUoJCErPkHA',
+            },
+            {
+                place_name: 'El Churrasco – Sede La Pola',
+                imageUrl: 'https://www.elolfato.com/sites/default/files/assets/news/churrasco_5.jpeg',
+                ubication: 'https://maps.app.goo.gl/d8p21tEXiFD3sg8d8',
             },
         ]
 
@@ -97,34 +117,29 @@ export const categoriesIbague: CategoryProps[] = [
         url: 'mall',
         places: [
             {
-                place_name: 'Chipichape',
-                imageUrl: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/02/e3/df/centro-comercial-chipichape.jpg?w=1200&h=-1&s=1',
-                ubication: 'https://maps.app.goo.gl/quwHP5LVgjYAYovWA',
+                place_name: 'La Estación',
+                imageUrl: 'https://elcronista.co/assets/media/centro-comercil-la-estacion-juegos-pirotecnicos.jpg',
+                ubication: 'https://maps.app.goo.gl/gfPrw5DWBWq2Dums5',
             },
             {
-                place_name: 'Centenario',
-                imageUrl: 'https://s3.amazonaws.com/imagenesprof.fincaraiz.com.co/OVFR_COL/2021/8/9/63149557.jpg',
-                ubication: 'https://maps.app.goo.gl/EPaLP8g8V2t8oVjK7',
+                place_name: 'Multicentro',
+                imageUrl: 'https://puntocomercial.org/wp-content/uploads/2020/08/multi-778x396.png',
+                ubication: 'https://maps.app.goo.gl/KpdcwskZKYtCKUHz8',
             },
             {
-                place_name: 'Cosmocentro',
-                imageUrl: 'https://www.elpais.com.co/resizer/B246PJqEPShqgzIpmlrYbBdxE3s=/1280x720/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/3FREIBQJZJGITPAMGAQAHZS4TU.png',
-                ubication: 'https://maps.app.goo.gl/9cCzgeqUpyGmHqYy6',
+                place_name: 'Aqua Power Center',
+                imageUrl: 'https://davivienda-bienes-cms.s3.amazonaws.com/Fachada_339eb0edad.jpg',
+                ubication: 'https://maps.app.goo.gl/9Xx6B8mAEkWzxdxr8',
             },
             {
-                place_name: 'Jardín Plaza',
-                imageUrl: 'https://www.laopinion.com.co/sites/default/files/2019/02/14/imagen/jardin.jpg',
-                ubication: 'https://g.co/kgs/TprNJZB',
+                place_name: 'CC Conbeima',
+                imageUrl: 'https://cccombeima.com/wp-content/uploads/2021/09/DSC_9846_Mejorada-scaled.jpg',
+                ubication: 'https://maps.app.goo.gl/4apKtXGMW1M4uR3SA',
             },
             {
-                place_name: 'Palmetto Plaza',
-                imageUrl: 'https://pictures.domus.la/inmobiliaria_77/7479_15_90101906.jpg',
-                ubication: 'https://maps.app.goo.gl/AZzMjkNrMq18cbKa6',
-            },
-            {
-                place_name: 'Unicentro',
-                imageUrl: 'https://caracol.com.co/resizer/7FO7V3ZcATtIstgYRixn-2Oxt1c=/650x0/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/prisaradioco/6H4HFNAPJJA65NQXLYJ4NQ7WKQ.jpg',
-                ubication: 'https://maps.app.goo.gl/WvmhKnz55nFX6Ebn6',
+                place_name: 'Parque Acuático Piscilago',
+                imageUrl: 'https://www.civitatis.com/f/colombia/ibague/galeria/piscilago-atracciones-acuaticas.jpg',
+                ubication: 'https://maps.app.goo.gl/qKBL98Vny64nMcb9A',
             },
         ]
 
@@ -138,9 +153,9 @@ export const categoriesIbague: CategoryProps[] = [
         url: 'houses-change',
         places: [
             {
-                place_name: 'Cambio de dinero',
-                imageUrl: casa,
-                page: "https://casascambio.com/colombia/cali/"
+                place_name: 'Cambios & Cambios Internacionales Quinta',
+                imageUrl: 'https://lh3.googleusercontent.com/TUjrJPaYo__ONjHcVzoKxYBNF5JOnRU1z5suUyUUzzNqHTpAFNhPUjQB8wnXqxg=s2474-w2474-h1356-rw',
+                // page: "https://casascambio.com/colombia/cali/"
             }
         ]
 
@@ -159,11 +174,7 @@ export const categoriesIbague: CategoryProps[] = [
                 appUrl: "https://play.google.com/store/apps/details?id=sinet.startup.inDriver&pcampaignid=web_share",
                 appImage: "https://play-lh.googleusercontent.com/_451OHm7ZjzFVbUcmQ6M9u1DboTB1k-3tZaLZMKvgPGOXYVXdZhoekY-IOxNAIhqSA=w240-h480-rw"
             },
-            {
-                name: 'Didi',
-                appUrl: "https://play.google.com/store/apps/details?id=com.didiglobal.passenger&pcampaignid=web_share",
-                appImage: "https://play-lh.googleusercontent.com/ngZqU1lkyADi-L6j9tWtM5mQS8BfpLr-JivKADttCdUAkIWi36VdZIA_SPZf8A-Jfeg=w240-h480-rw"
-            },
+
         ]
 
     },

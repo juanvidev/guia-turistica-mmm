@@ -8,7 +8,7 @@ export const categoriesCali: CategoryProps[] = [
         role: 'Actualizado',
         lastSeen: '3h ago',
         lastSeenDateTime: '2023-01-23T13:23Z',
-        url: 'sites-tourist-cali',
+        url: 'sites-tourist',
         places: [
             {
                 place_name: 'Mirador Cristo Rey',
@@ -104,7 +104,7 @@ export const categoriesCali: CategoryProps[] = [
         role: 'Actualizado',
         lastSeen: "3h ago",
         lastSeenDateTime: '2023-01-23T13:23Z',
-        url: 'resturants-zone',
+        url: 'restaurants-zone',
         places: [
             {
                 place_name: 'Granada',
