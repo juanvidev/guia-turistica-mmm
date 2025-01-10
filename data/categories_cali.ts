@@ -22,12 +22,12 @@ export const categoriesCali: CategoryProps[] = [
             },
             {
                 place_name: 'Mirador Iglesia San Antonio',
-                imageUrl: 'https://scontent-bog1-1.xx.fbcdn.net/v/t1.6435-9/43681903_2105945876085359_3251013166141800448_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=4dc865&_nc_eui2=AeHqfuRRbTS91KgQa7uTuQ_Vfqt-JCWiJgR-q34kJaImBGzPOC8IoqFrH3nPSVzFSNg_knlRO6g0z753O0muZCPz&_nc_ohc=sM3gV4MMVo4AX-39XbW&_nc_ht=scontent-bog1-1.xx&oh=00_AfBKX5tvVuTsb8uYy06ekdQFwLkBeZbveu-3SQzJpTxStw&oe=65BAAB09',
+                imageUrl: 'https://elturismoencolombia.com/storage/2019/05/san_antonio_iglesia_cali_colombia.jpg',
                 ubication: 'https://maps.app.goo.gl/mNrv3dgVpQQgXpsC6',
             },
             {
                 place_name: 'Museo la Tertulia',
-                imageUrl: 'https://traveler.marriott.com/es/wp-content/uploads/sites/2/2021/12/Museo-La-Tertulia-1920x1080.jpg',
+                imageUrl: 'https://www.cali.gov.co/cultura/publicaciones/113585/museo_la_tertulia_presenta_agenda_de_eventos_conmemorativos_en_rueda_de_prensa/info/principal/media/pub/thumbs/thpub_700X400_113585.jpg',
                 ubication: 'https://maps.app.goo.gl/5fpQh5bjy4Drq5wh9',
             },
             {
@@ -138,13 +138,13 @@ export const categoriesCali: CategoryProps[] = [
             },
             {
                 place_name: 'La Novena',
-                imageUrl: 'https://blog.rappi.com/wp-content/uploads/2016/12/01-100-1.jpg',
+                imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4BXvO3NkVLm1svfFwmcUt4c2Wb9kxO0CFTw&s',
                 ubication: 'https://maps.app.goo.gl/oJarQqtSFk3vwa5J6',
                 page: "https://www.tripadvisor.co/RestaurantsNear-g297475-d9758109-oa30-Palmetto_Plaza-Cali_Valle_del_Cauca_Department.html"
             },
             {
                 place_name: 'Ciudad Jardín',
-                imageUrl: 'https://www.planetasublime.com/wp-content/uploads/2022/10/restaurantes-en-ciudad-jardin-en-cali-planeta-sublime-1.jpeg',
+                imageUrl: 'https://quehacerencali.co/wp-content/uploads/2024/03/restaurantes-en-ciudad-jardin-en-cali.jpeg.webp',
                 ubication: 'https://maps.app.goo.gl/1MmGW3idvihK7BWu6',
                 page: "https://www.degusta.com.co/cali/search?filters=eyJmaWx0ZXJzIjp7fSwic2NvcmVfcmFuZ2UiOnt9LCJuZWlnaGJvcmhvb2QiOlsiQ2l1ZGFkIEphcmTtbiJdLCJzb3J0IjoiZm9vZCJ9"
             },
@@ -166,7 +166,7 @@ export const categoriesCali: CategoryProps[] = [
         places: [
             {
                 place_name: 'La Boquería',
-                imageUrl: 'https://restaurante.guide/wp-content/uploads/2020/03/la-boqueria-logo.jpg',
+                imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgECIkrJsxe9kzqJ19r2KlweHgZMgaFv9F6Q&s',
                 ubication: 'https://maps.app.goo.gl/zW1ubAATV1owek6y6',
             },
             {
@@ -197,7 +197,7 @@ export const categoriesCali: CategoryProps[] = [
             },
             {
                 place_name: 'Centenario',
-                imageUrl: 'https://s3.amazonaws.com/imagenesprof.fincaraiz.com.co/OVFR_COL/2021/8/9/63149557.jpg',
+                imageUrl: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/0f/5a/0a/bienvenidos-al-centro.jpg?w=1000&h=600&s=1',
                 ubication: 'https://maps.app.goo.gl/EPaLP8g8V2t8oVjK7',
             },
             {

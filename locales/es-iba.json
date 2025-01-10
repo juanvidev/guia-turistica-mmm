@@ -2,7 +2,7 @@
   "title-app": "Guía Turística",
   "subtitle-app": "Convención Nacional de Colombia",
   "coliseum": "Coliseo",
-  "c1": "Sitios turisticos",
+  "c1": "Sitios turísticos",
   "c2": "Restaurantes",
   "c3": "Centros Comerciales",
   "c4": "Casas de Cambio",
@@ -18,6 +18,7 @@
   "c1-place-name-8": "Reserva Orquídeas del Tolima",
   "c1-place-name-9": "Parque Murillo Toro",
   "c1-place-name-10": "Casa de la Moneda",
+  "c1-place-name-11": "Parque Acuatico Piscilago",
   "c2-place-name-1": "La Parrilla de Marcos",
   "c2-place-name-2": "Restaurante Hacienda Res y Pez",
   "c2-place-name-3": "Paz Restaurante",
@@ -29,6 +30,5 @@
   "c3-place-name-2": "Multicentro",
   "c3-place-name-3": "Aqua Power Center",
   "c3-place-name-4": "Centro Comercial Combeima",
-  "c3-place-name-5": "Parque Acuatico Piscilago",
   "c4-place-name-1": "Cambios & Cambios Internacionales Quinta"
 }

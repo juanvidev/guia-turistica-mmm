@@ -59,6 +59,11 @@ export const categoriesIbague: CategoryProps[] = [
                 imageUrl: 'https://www.banrep.gov.co/sites/default/files/images/fabrica-moneda-fachada.jpg',
                 ubication: 'https://maps.app.goo.gl/bbU1M3jcDFsfTreX8',
             },
+            {
+                place_name: 'Parque Acuático Piscilago',
+                imageUrl: 'https://www.civitatis.com/f/colombia/ibague/galeria/piscilago-atracciones-acuaticas.jpg',
+                ubication: 'https://maps.app.goo.gl/qKBL98Vny64nMcb9A',
+            },
         ]
     },
     {
@@ -135,11 +140,7 @@ export const categoriesIbague: CategoryProps[] = [
                 imageUrl: 'https://cccombeima.com/wp-content/uploads/2021/09/DSC_9846_Mejorada-scaled.jpg',
                 ubication: 'https://maps.app.goo.gl/4apKtXGMW1M4uR3SA',
             },
-            {
-                place_name: 'Parque Acuático Piscilago',
-                imageUrl: 'https://www.civitatis.com/f/colombia/ibague/galeria/piscilago-atracciones-acuaticas.jpg',
-                ubication: 'https://maps.app.goo.gl/qKBL98Vny64nMcb9A',
-            },
+
         ]
 
     },
