@@ -1,5 +1,4 @@
 import { useLocation, useNavigate } from 'react-router'
-import LogoMMM from '../assets/logommm.png'
 import I18nWidget from './UI/I18nWidget';
 import { useTranslation } from 'react-i18next';
 import { MdOutlinePlace } from 'react-icons/md';
@@ -21,8 +20,7 @@ const Header = () => {
 
     return (
         <>
-            <div className="px-10 flex flex-col pt-4 text-gray-200 sm:text-white justify-center items-center h-[22%] w-full z-10">
-                <img className='animate__animated animate__fadeIn animate__delay-1s mb-5 object-contain' loading='lazy' width={50} src={LogoMMM} alt="LogoMMM" />
+            <div className="px-10 flex flex-col pt-0 text-gray-200 sm:text-white justify-center items-center h-[18%] w-full z-10">
                 <h1 className="animate__animated animate__fadeInDown text-md md:text-2xl font-semibold text-center">{t('subtitle-app') + " " + yearOnDisplay}</h1>
                 <h1 className="animate__animated animate__fadeInDown text-3xl md:text-4xl font-bold text-center">{t('title-app')}</h1>
                 <div className='flex justify-center items-center'>

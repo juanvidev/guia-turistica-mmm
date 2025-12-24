@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
-import Footer from "./components/Footer";
+import Banner from './components/Banner';
 import Header from "./components/Header";
 import Layout from "./components/UI/Layout";
 import ListOfItems from "./components/UI/ListOfItems";
@@ -49,6 +49,7 @@ const App = () => {
 
   return (
     <Layout>
+      <Banner />
       <Header />
       <Routes>
         <Route path="/" element={<Navigate to="/cali" replace />} />
@@ -56,7 +57,6 @@ const App = () => {
         <Route path="/:city/:category" element={<ListOfItems />} />
         <Route path="*" element={<Navigate to="/cali" replace />} />
       </Routes>
-      <Footer />
     </Layout>
   )
 }
