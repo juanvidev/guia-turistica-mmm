@@ -10,7 +10,7 @@ import translationES from '../locales/es.json';
 import translationESIBA from '../locales/es-iba.json';
 import translationENIBA from '../locales/en-iba.json';
 import 'animate.css';
-import Home from './components/Home';
+// import Home from './components/Home';
 import CategoryPage from './pages/CategoryPage';
 import { useEffect, useState } from 'react';
 
