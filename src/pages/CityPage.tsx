@@ -9,11 +9,11 @@ const citiesList: IListItem[] = [
         url: "cali",
         icon: <FaLocationDot className="text-gray-100 text-2xl" />
     },
-    {
-        name: "ibagué",
-        url: "ibague",
-        icon: <FaLocationDot className="text-gray-100 text-2xl" />
-    },
+    // {
+    //     name: "ibagué",
+    //     url: "ibague",
+    //     icon: <FaLocationDot className="text-gray-100 text-2xl" />
+    // },
     // {
     //     name: "barranquilla",
     //     url: "barranquilla",

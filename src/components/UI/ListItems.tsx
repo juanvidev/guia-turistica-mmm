@@ -29,7 +29,7 @@ const ListItems: FC<ListItemsProps> = ({ items = [], type }) => {
                                     {item.icon}
                                 </div>
                                 <div className="min-w-0 flex justify-center items-center flex-1">
-                                    <p className="text-sm md:text-md w-full font-semibold leading-6 text-gray-200 sm:text-white">{type === 'city' ? item.name.charAt(0).toUpperCase() + item.name.substring(1, item.name.length) : t(nameCat) }</p>
+                                    <p className="text-sm md:text-md w-full font-semibold leading-6 text-gray-200 sm:text-white">{type === 'city' ? item.name.charAt(0).toUpperCase() + item.name.substring(1, item.name.length) : t(nameCat)}</p>
                                 </div>
                             </div>
                             <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">

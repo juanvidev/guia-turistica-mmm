@@ -41,7 +41,7 @@ const App = () => {
     });
 
   useEffect(() => {
-    
+
     setUsePathaname(pathname.split('/')[1]);
 
   }, [pathname])
@@ -51,10 +51,10 @@ const App = () => {
     <Layout>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Navigate to="/cali" replace />} />
         <Route path="/:city" element={<CategoryPage />} />
         <Route path="/:city/:category" element={<ListOfItems />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/cali" replace />} />
       </Routes>
       <Footer />
     </Layout>
