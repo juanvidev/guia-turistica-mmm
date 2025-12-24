@@ -34,12 +34,12 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
 
     useLayoutEffect(() => {
 
-        // const timeout = setTimeout(() => {
-        //     setIsLoading(!isLoaded)
-        // }, 1300);
+        const timeout = setTimeout(() => {
+            setIsLoading(!isLoaded)
+        }, 1300);
 
         return () => {
-            // clearTimeout(timeout)
+            clearTimeout(timeout)
         }
     }, [isLoaded])
 
