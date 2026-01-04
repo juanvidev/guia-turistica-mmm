@@ -29,11 +29,11 @@ const ListItems: FC<ListItemsProps> = ({ items = [], type }) => {
                                     {item.icon}
                                 </div>
                                 <div className="min-w-0 flex justify-center items-center flex-1">
-                                    <p className="text-sm md:text-md w-full font-semibold leading-6 text-gray-200 sm:text-white">{type === 'city' ? item.name.charAt(0).toUpperCase() + item.name.substring(1, item.name.length) : t(nameCat)}</p>
+                                    <p className="font-custom text-xs md:text-md w-full leading-6 text-gray-200 sm:text-white">{type === 'city' ? item.name.charAt(0).toUpperCase() + item.name.substring(1, item.name.length) : t(nameCat)}</p>
                                 </div>
                             </div>
                             <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                                <p className="text-sm leading-6 text-gray-200">{item.role}</p>
+                                <p className="font-custom text-sm leading-6 text-gray-200">{item.role}</p>
                                 <div className="mt-1 flex items-center gap-x-1.5">
                                     <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                                         <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" />

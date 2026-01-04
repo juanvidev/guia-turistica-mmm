@@ -55,7 +55,7 @@ const ListOfItems: FC = () => {
                                 />
                             </div>
                             <div className="flex p-1 sm:p-2 ">
-                                <h3 className="text-sm  p-1 sm:p-2 sm:text-lg flex-1 font-semibold text-gray-200 sm:text-white">{t(`${idCategory}-place-name-${index + 1}`)}</h3>
+                                <h3 className="text-xs p-1 sm:p-2 sm:text-lg flex-1 font-custom text-gray-200 sm:text-white">{t(`${idCategory}-place-name-${index + 1}`)}</h3>
                                 {page && (
                                     <>
                                         <a className="mr-4" target="_blank" href={page} >
@@ -89,7 +89,7 @@ const ListOfItems: FC = () => {
                                         />
                                     </div>
                                     <div className="flex p-1 sm:p-2 ">
-                                        <h3 className="text-sm text-center p-1 sm:p-2 sm:text-lg flex-1 font-semibold text-gray-200 sm:text-white">{transport.name}</h3>
+                                        <h3 className="text-xs text-center p-1 sm:p-2 sm:text-lg flex-1 font-custom text-gray-200 sm:text-white">{transport.name}</h3>
                                     </div>
                                 </div>
                             )

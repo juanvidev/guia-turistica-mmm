@@ -13,23 +13,23 @@ import { useParams } from "react-router";
 import { IListItem } from "../types/types";
 
 const icons = [
-    <FaBuildingFlag className="text-gray-100 text-2xl" />,
-    <FaPersonHiking className="text-gray-100 text-2xl" />,
-    <IoFastFoodOutline className="text-gray-100 text-2xl" />,
-    <MdOutlineRestaurant className="text-gray-100 text-2xl" />,
-    <MdOutlineLocalMall className="text-gray-100 text-2xl" />,
-    <MdOutlineCurrencyExchange className="text-gray-100 text-2xl" />,
-    <FaCar className="text-gray-100 text-2xl" />,
-    <FaHandsHelping className="text-gray-100 text-2xl" />,
+    <FaBuildingFlag className="text-icons text-2xl" />,
+    <FaPersonHiking className="text-icons text-2xl" />,
+    <IoFastFoodOutline className="text-icons text-2xl" />,
+    <MdOutlineRestaurant className="text-icons text-2xl" />,
+    <MdOutlineLocalMall className="text-icons text-2xl" />,
+    <MdOutlineCurrencyExchange className="text-icons text-2xl" />,
+    <FaCar className="text-icons text-2xl" />,
+    <FaHandsHelping className="text-icons text-2xl" />,
 ]
 
 const iconsIbague = [
-    <FaBuildingFlag className="text-gray-100 text-2xl" />,
-    <MdOutlineRestaurant className="text-gray-100 text-2xl" />,
-    <MdOutlineLocalMall className="text-gray-100 text-2xl" />,
-    <MdOutlineCurrencyExchange className="text-gray-100 text-2xl" />,
-    <FaCar className="text-gray-100 text-2xl" />,
-    <FaHandsHelping className="text-gray-100 text-2xl" />,
+    <FaBuildingFlag className="text-icons text-2xl" />,
+    <MdOutlineRestaurant className="text-icons text-2xl" />,
+    <MdOutlineLocalMall className="text-icons text-2xl" />,
+    <MdOutlineCurrencyExchange className="text-icons text-2xl" />,
+    <FaCar className="text-icons text-2xl" />,
+    <FaHandsHelping className="text-icons text-2xl" />,
 ]
 
 
@@ -58,11 +58,11 @@ const CategoryPage = () => {
             break;
     }
 
-        return (
-            <div className="flex-1 h-[100%] w-full flex-col flex items-center z-10 overflow-scroll overflow-x-hidden" >
-                <ListItems items={categories} />
-            </div>
-        )
+    return (
+        <div className="flex-1 h-[100%] w-full flex-col flex items-center z-10 overflow-scroll overflow-x-hidden" >
+            <ListItems items={categories} />
+        </div>
+    )
 }
 
 export default CategoryPage

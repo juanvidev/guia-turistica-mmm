@@ -13,7 +13,11 @@ export default {
     extend: {
       backgroundImage: {
         'bg-cnc': "url('/src/assets/fondocnc.png')",
-      }
+      },
+      fontStretch: {
+        normal: "100%",
+        expanded: "125%",
+      },
     },
     accentColor: ({ theme }) => ({
       ...theme('colors'),
@@ -171,6 +175,7 @@ export default {
       pink: colors.pink,
       rose: colors.rose,
       gold: "#ffbf00",
+      icons: "#fca40e",
     }),
     columns: {
       auto: 'auto',
@@ -313,7 +318,9 @@ export default {
       DEFAULT: '1',
     },
     fontFamily: {
-      sans: ['Inter var', ...defaultTheme.fontFamily.sans], serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      custom: ['FontCustom', 'sans-serif'],
+      sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
         'ui-monospace',
         'SFMono-Regular',

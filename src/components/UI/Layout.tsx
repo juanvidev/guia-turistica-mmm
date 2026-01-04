@@ -1,7 +1,7 @@
 import { FC, useEffect, useLayoutEffect, useState } from "react"
-import logocnc from '../../assets/logocnc.svg'
+import logocnc from '../../assets/logocnc.png'
 // import LogoMMM from '../../assets/logommm.png'
-import img from '../../assets/fondocnc.png';
+// import img from '../../assets/fondocnc.png';
 import { PropagateLoader } from "react-spinners";
 
 const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => {
@@ -44,28 +44,28 @@ const Layout: FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => 
     }, [isLoaded])
 
     return (
-        <div style={{ height: screenSize.dynamicHeight }} className="relative bg-gray-900 w-full">
+        <div onLoad={handleLoad} style={{ height: screenSize.dynamicHeight }} className="relative bg-gray-900 w-full">
 
-            <img src={img} onLoad={handleLoad} className={`absolute w-full object-cover z-[0] h-full block min-[641px]:hidden ${isLoading ? 'hidden' : 'block'}`} alt="FondoCNC" />
+            {/* <img src={img} onLoad={handleLoad} className={`absolute w-full object-cover z-[0] h-full block min-[641px]:hidden ${isLoading ? 'hidden' : 'block'}`} alt="FondoCNC" /> */}
             {
                 isLoading ?
                     (
                         <div style={{ height: screenSize.dynamicHeight }} className="bg-loader flex-col bg-gray-900 text-gray-200 w-full flex justify-center items-center">
                             <div className="flex flex-row w-[40%] items-center justify-center">
                                 {/* <img className='animate__animated animate__fadeIn animate__fast object-contain' width={80} src={LogoMMM} alt="LogoMMM" /> */}
-                                <img className='animate__animated animate__fadeIn animate__fast z-10' src={logocnc} alt="LogoCNC2025" width={145} />
+                                <img className='animate__animated animate__fadeIn animate__fast z-10' src={logocnc} alt="LogoCNC2026" width={145} />
                             </div>
-                            <PropagateLoader className="py-3" color="#ce143f" size={8} />
+                            <PropagateLoader className="py-3" color="#0ba0e0ff" size={8} />
                         </div>
 
                     ) : (
-                        <div style={{ height: screenSize.dynamicHeight }} className="relative w-full flex flex-col items-center overflow-hidden">
+                        <div style={{ height: screenSize.dynamicHeight }} className="relative bg-home w-full flex flex-col items-center overflow-hidden">
                             <div className="absolute top-[30%] rotate-12 opacity-[.05] z-1">
-                                <img src={logocnc} alt="" width={300} />
+                                {/* <img src={logocnc} alt="" width={300} /> */}
                             </div>
 
-                            <div className="glow-left z-[5]"></div>
-                            <div className="glow-right z-[5] opacity-60 md:opacity-100"></div>
+                            {/* <div className="glow-left z-[5]"></div>
+                            <div className="glow-right z-[5] opacity-60 md:opacity-100"></div> */}
 
 
                             {children}
