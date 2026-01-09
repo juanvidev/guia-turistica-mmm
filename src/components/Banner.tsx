@@ -10,8 +10,8 @@ const Banner = () => {
     return (
         <div className="flex justify-center w-full h-[10%]">
             {/* <img className='animate__animated animate__fadeIn animate__fast animate__delay-1s md:w-[100px] z-10 object-contain' src={logocnc} alt="LogoCNC2025" /> */}
-            <img className='animate__animated animate__fadeIn animate__delay-0.5s mb-1 object-contain' loading='lazy' width={50} src={LogoMMM} alt="LogoMMM" />
-            {i18n.language === 'es' ? <img className='animate__animated animate__fadeIn animate__delay-0.5s z-10 md:w-[200px] ml-5' src={lema} alt="Lema2026" width={140} /> : <img className='animate__animated animate__fadeIn animate__fast animate__delay-.1s z-10 md:w-[200px] ml-5' src={lemaEN} alt="Lema2026" width={140} />}
+            <img className='animate__animated animate__fadeInDown mb-1 object-contain' loading='lazy' width={50} src={LogoMMM} alt="LogoMMM" />
+            {i18n.language === 'es' ? <img className='animate__animated animate__fadeInDown z-10 md:w-[200px] ml-5' src={lema} alt="Lema2026" width={140} /> : <img className='animate__animated animate__fadeIn animate__fast animate__delay-.1s z-10 md:w-[200px] ml-5' src={lemaEN} alt="Lema2026" width={140} />}
         </div>
     )
 }
