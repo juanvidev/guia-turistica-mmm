@@ -11,8 +11,6 @@ const Header = () => {
 
     const city = location.pathname !== '/' ? location.pathname.split('/')[1] : '';
 
-    const yearOnDisplay = new Date().getMonth() == 11 ? new Date().getFullYear() + 1 : new Date().getFullYear();
-
     const handleBack = () => {
         if (location.pathname === '/') return;
         navigate(-1);
@@ -21,8 +19,8 @@ const Header = () => {
     return (
         <>
             <div className="px-10 flex flex-col pt-0 text-gray-200 sm:text-white justify-center items-center h-[18%] w-full z-10">
-                <h1 className="animate__animated animate__fadeInDown font-custom font-normal text-sm md:text-2xl text-center">{t('subtitle-app') + " " + yearOnDisplay}</h1>
-                <h1 className="animate__animated animate__fadeInDown font-custom font-normal text-2xl md:text-4xl text-center">{t('title-app')}</h1>
+                <h1 className="animate__animated animate__fadeInDown font-custom font-normal text-xl md:text-2xl text-center">{t('subtitle-app')}</h1>
+                <h1 className="animate__animated animate__fadeInDown font-custom font-black text-2xl md:text-4xl text-center">{t('title-app')}</h1>
                 <div className='flex justify-center items-center'>
                     <I18nWidget />
                     {
